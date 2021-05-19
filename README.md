@@ -1,34 +1,30 @@
 
-# Data Science for Biology I: Unix and Python
+# Introductory Data Science Tools: Unix and Python
 
 
 
-Fall 2020    
-BIOL 792 - 1028   
+## GAIN program Summer 2021    
 **Prof**: Dr. Thomas Parchman; SFB 209; tparchman@unr.edu   
-**Post doc instructor**: Dr. Joshua Jahner; jpjahner@gmail.com \
-Class: Tuesday/Thursday 6:00 – 7:10 pm TBA   
-Office Hours: By appointment    
+**Co instructor**: Trevor Faske; tfaske@nevada.unr.edu \
+**Workshop hours**: 9:00-12:00 AM, August 9 - 11
 
 
-## Course Description
-Modern Biology is increasingly shaped by data sets that are orders of magnitude larger than most biologists are trained to work with. This is especially the case for the fields of genetics and genomics where major recent advances in DNA sequencing technology have cut the time and cost investment of DNA sequencing more than 100,000 fold. Spreadsheet software and graphical user interface statistical analysis packages (e.g., Excel, Statistica, JMP) are useless for this scale of data for any scientic discipline. This course will introduce students to basic computational tools (focusing on Unix and Python) for modern biology. The course will involve hands on approaches and the analysis of data collected for graduate student research projects as well as examples from genomic data sets generated in my lab. The course should provide a starting point for students to gain further expertise in simple programming and efficient manipulation and analysis of large-scale data sets. The tools to be learned in this class are not unique to genomics, and will be of value to research in any scientific field. This course serves as a prerequisite for Data Science for Biology II, taught by Dr. Julie Allen during the spring. Prerequisites: must be enrolled as M.S. or Ph.D. student.
+## Workshop Description
+Modern biology, and other fields of science, are increasingly shaped by data sets that are orders of magnitude larger than life scientists have traditionally been trained to work with. For example, major recent advances in DNA sequencing technology have created the ability to affordably generate data spanning billions of DNA sequences in an extremely short period of time. Similar leaps in data acquisition technology are transforming other disciplines as well. Spreadsheet software and graphical user interface statistical analysis packages (e.g., Excel, Statistica, JMP) are useless for this scale of data for any scientific discipline. The ability to maninpulate, process, and analyze large data sets with basic programming and data science tools should accelerate the research productivity and success of graduate students in this era. 
+
+This short workshop will introduce students to basic computational tools (focusing on Unix and Python) to support data science proficiency. This will involve hands on approaches and the analysis of data collected for graduate student research projects as well as examples from genomic data sets generated in my lab. The goal of the workshop is to provide an early starting point for students to gain further expertise in simple programming and efficient manipulation and analysis of large-scale data sets. The tools we will introduce during this workshop are not unique to genomics, and will be of value to research in any scientific field. 
 
 
 ## Student Learning Outcomes
-By the end of the semester, students should have learned enough to
-start working more confidently with big data using Unix and Python. We will emphasize tools often used in genomics and bioinformatics, but the applications learned will apply generally to data science. This course should also prepare students for the more advanced sister course, Data Science for Biology II, taught during spring semesters.
+By the end of the workshop, students should have learned enough to feel enabled and motivated to learn more Unix and Python. The workshop will serve to introduce students to these tools, to prepare them for more in depth courses, and most importantly to stimulate ongoing independent learning.
 
-* Students will be able to operate in a Unix computing
-     environment, and will understand the basic use of Unix computing
-     clusters for research.
+* Students will be able to operate in a Unix computing environment, and will understand the basic use of Unix computing clusters for research.
      
-* Students will be able to write basic programs in Python in
-       order to efficiently manipulate and work with large scale data.
+* Students will be able to write basic programs in Python in order to efficiently manipulate and work with large scale data.
 
-* Students will be able to use basic Unix and Python skills to
-       manipulate large genomic data sets, and to conduct basic analyses of
-       genome level DNA sequencing data.
+* Students will have enough exposure to freely available resources for Unix and Python to continue independently learning programming skills.
+
+* Students will be able to use basic Unix and Python skills to manipulate large data sets, and to conduct basic analyses of genome level DNA sequencing data.
 
 ## Required Materials
 
@@ -38,9 +34,9 @@ start working more confidently with big data using Unix and Python. We will emph
   Mac computers already have machines running Unix and
   are ready to go. Students without Mac computers will have the option of checking out a Mac laptop for the semester, or will need to figure out how to install Linux or a Linux emulator on their computer. 
 
-* **Supplemental primers, readings and assignments** will be announced during the class and provided on the [course github page](https://github.com/tparchman/BIOL792_course_site).
+* **Supplemental primers, readings and assignments** are provided on the [workshop github page](https://github.com/tparchman/GAIN_summer2021).
 
-## Course Format
+## Workshop Format
 We will meet twice a week (Tues/Thurs 6:00-7:15) but I typically reserve two hours of time during each window to allow discusion/troubleshooting on coding related to assignments/projects. At the beginning of each class, I will introduce new concepts and material that will form the basis of the exercises, assignments, or projects we will work through that week. We will cover questions regarding previous material, and then you will spend at least half of each class working independently, or in small groups, on writing code. All students should come to class having thoroughly read the assigned material and prepared for discussion. As the class will be remote this semester, we will hold our weekly meetings at prescheduled zoom sessions [zoom invite](https://unr.zoom.us/j/92025861279)
 
 ## Course Material Repositoy

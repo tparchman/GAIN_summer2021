@@ -28,16 +28,21 @@ By the end of the workshop, students should have learned enough to feel enabled 
 
 ## Required Materials
 
-* **Practical computing for biologists** Haddock, S.H.D. and Dunn, C.W., 2011. Sunderland, MA, USA: Sinauer Associates. The book provides an excellent guide to the much of content of the course, is filled with excellent examples and problems, and will also be utilized in Data Science for Biology II during spring semesters.
-
 * **Computer with Unix operating system** Students with
   Mac computers already have machines running Unix and
   are ready to go. Students without Mac computers will have the option of checking out a Mac laptop for the semester, or will need to figure out how to install Linux or a Linux emulator on their computer. 
 
 * **Supplemental primers, readings and assignments** are provided on the [workshop github page](https://github.com/tparchman/GAIN_summer2021).
 
+### Suggested for more in depth learning
+* **Practical computing for biologists** Haddock, S.H.D. and Dunn, C.W., 2011. Sunderland, MA, USA: Sinauer Associates. The book is used for both .
+
 ## Workshop Format
-We will meet twice a week (Tues/Thurs 6:00-7:15) but I typically reserve two hours of time during each window to allow discusion/troubleshooting on coding related to assignments/projects. At the beginning of each class, I will introduce new concepts and material that will form the basis of the exercises, assignments, or projects we will work through that week. We will cover questions regarding previous material, and then you will spend at least half of each class working independently, or in small groups, on writing code. All students should come to class having thoroughly read the assigned material and prepared for discussion. As the class will be remote this semester, we will hold our weekly meetings at prescheduled zoom sessions [zoom invite](https://unr.zoom.us/j/92025861279)
+We will meet from 9:00-12:00 each morning from August 9th to August 11th. At the beginning of each session, I will introduce new concepts and material that will form the basis of the exercises, assignments, or projects we will work through that session. We will cover questions regarding current or previous material, and then students will spend at least half of each class working independently, or in small groups, on writing code. Students will get the most out of each session if they review the primers and outlines of concepts ahead of time. 
+
+The material for each day of the workshop will be organized in separate directories on the course github page. Each of these directories will contain an outline of topics we will cover, the slides that we will use to introduce material, a primer covering example Unix and Python code, and a worksheet of programming exercises.
+
+* As the class will be remote this session, we will hold our weekly meetings at prescheduled zoom sessions [zoom invite](https://unr.zoom.us/j/92025861279)
 
 ## Course Material Repositoy
 All readings, primers, problem set instructions, datasets, as well as ample supplemental materials will be available on the [course github page](https://github.com/tparchman/BIOL792_course_site). This will include primers for Unix and Python content, and additional resources for learning more about Python, Unix, and genomic workflows, and information and data sets related to assignments. 

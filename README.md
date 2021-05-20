@@ -10,13 +10,15 @@
 
 
 ## Workshop Description
-Modern biology, and other fields of science, are increasingly shaped by data sets that are orders of magnitude larger than life scientists have traditionally been trained to work with. For example, major recent advances in DNA sequencing technology have created the ability to affordably generate data spanning billions of DNA sequences in an extremely short period of time. Similar leaps in data acquisition technology are transforming other disciplines as well. Spreadsheet software and graphical user interface statistical analysis packages (e.g., Excel, Statistica, JMP) are useless for this scale of data for any scientific discipline. The ability to maninpulate, process, and analyze large data sets with basic programming and data science tools should accelerate the research productivity and success of graduate students in this era. 
+Modern biology, and other fields of science, are increasingly shaped by data sets that are orders of magnitude larger than life scientists have traditionally been trained to work with. For example, major recent advances in DNA sequencing technology have created the ability to affordably generate data spanning billions of DNA sequences in an extremely short period of time. Similar leaps in data acquisition technology are transforming other scientific disciplines as well, including but not limited to: . Spreadsheet software and graphical user interface statistical analysis packages (e.g., Excel, Statistica, JMP) are useless for this scale of data. The ability to maninpulate, process, and analyze large data sets with basic programming and data science tools should accelerate the research productivity and success of graduate students in this era. 
 
-This short workshop will introduce students to basic computational tools (focusing on Unix and Python) to support data science proficiency. This will involve hands on approaches and the analysis of data collected for graduate student research projects as well as examples from genomic data sets generated in my lab. The goal of the workshop is to provide an early starting point for students to gain further expertise in simple programming and efficient manipulation and analysis of large-scale data sets. The tools we will introduce during this workshop are not unique to genomics, and will be of value to research in any scientific field. 
+This short workshop will introduce students to basic computational tools (focusing on Unix and Python) to support data science proficiency. This will involve hands on approaches and the analysis of data collected for graduate student research projects as well as examples from genomic data sets generated in my lab. The goal of the workshop is to provide an early starting point for students to gain further expertise in simple programming and efficient manipulation and analysis of large-scale data sets. The tools we will introduce during this workshop are not unique to genomics, and will be of value to research in any scientific field. The continued development of proficiency with these and similar skillsets are guaranteed to improve the efficacy and quality pf graduate research across nearly any field of science.
 
 
 ## Student Learning Outcomes
-By the end of the workshop, students should have learned enough to feel enabled and motivated to learn more Unix and Python. The workshop will serve to introduce students to these tools, to prepare them for more in depth courses, and most importantly to stimulate ongoing independent learning.
+By the end of the workshop, students should have learned enough to feel enabled and motivated to learn more Unix and Python. The workshop will serve to introduce students to programming, to prepare them for more in depth courses, and most importantly to provide a foundation for ongoing independent learning. 
+
+Specific Student Learning Outcomes:
 
 * Students will be able to operate in a Unix computing environment, and will understand the basic use of Unix computing clusters for research.
      
@@ -40,11 +42,14 @@ By the end of the workshop, students should have learned enough to feel enabled 
 ## Workshop Format
 We will meet from 9:00-12:00 each morning from August 9th to August 11th. At the beginning of each session, I will introduce new concepts and material that will form the basis of the exercises, assignments, or projects we will work through that session. We will cover questions regarding current or previous material, and then students will spend at least half of each class working independently, or in small groups, on writing code. Students will get the most out of each session if they review the primers and outlines of concepts ahead of time. 
 
-The material for each day of the workshop will be organized in separate directories on the course github page. Each of these directories will contain an outline of topics we will cover, the slides that we will use to introduce material, a primer covering example Unix and Python code, and a worksheet of programming exercises.
+
 
 * As the class will be remote this session, we will hold our weekly meetings at prescheduled zoom sessions [zoom invite](https://unr.zoom.us/j/92025861279)
 
-## Course Material Repositoy
+## Workshop Material Organization
+
+The material for each day of the workshop will be organized in separate directories on [workshop github page](https://github.com/tparchman/GAIN_summer2021). Each of these directories will contain an outline of topics we will cover, the slides that we will use to introduce material, a primer covering example Unix and Python code, and a worksheet of programming exercises. There are also general directories on the repository with supplementary resources for Unix and Python, including cheat sheets, tutorials, and recommended resources for learning more.
+
 All readings, primers, problem set instructions, datasets, as well as ample supplemental materials will be available on the [course github page](https://github.com/tparchman/BIOL792_course_site). This will include primers for Unix and Python content, and additional resources for learning more about Python, Unix, and genomic workflows, and information and data sets related to assignments. 
 
 ## Grades

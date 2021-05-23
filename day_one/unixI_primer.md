@@ -1,13 +1,13 @@
 # Unix primer 1
 
-## Topics to cover this week
-- getting set with Unix
+## Topics to cover today
+- getting familiar with Unix
 - Text editors: why they are important, choosing among options
-- introduction to simple Unix commands
-- From the book: **Chapter 1; Chapter 4 to page 61**. Preview chapters 2 and 3 if you like, we will cover regular expressions in depth once we get into Python.
+- Introduction to basic Unix commands
+- Review 
 
 ## Overview
-We will start by getting set up for the course. First, we will make sure everyone has Unix or Linux running on their computers. Second, we will choose a text editor to use for this course and for writing and editing code in general.
+We will start by getting set up for the week. First, we will make sure everyone has Unix or Linux running on their computers. Second, we will choose a text editor to use for this course and for writing and editing code in general.
 
 We will then get started on learning basic Unix commands which you are likely to use frequently. We will gain deeper familiarity with directory structure, how to navigate through this structure, view contents of directories and files, and learn to make, copy, or delete files and directories.
 

@@ -141,11 +141,8 @@ Try some other useful commands:
 
 ## Unix tutorials: COMPLETE THE FIRST 2-3 sections of each of the below tutorials. This will help you get up to speed and or solidify introductory Unix commands.
 
-Lastly for our first week, work through the first two sections of this tutorial to reiterate your introduction.
+Lastly for our first day, work through the first two sections of this tutorial to reiterate your introduction.
 
-http://www.ee.surrey.ac.uk/Teaching/Unix/index.html
-
-Start at the beginning by clicking on “Introduction to the UNIX Operating System.” Then work through the first two sections of the tutorial, creating and manipulating files as directed. At the beginning of section 2, you’ll see that a file (science.txt) that you can find in the "week1_unixI" page on the course website.
-You can stop with section three this week
+Useful primer from "Unix and Perl to the Rescue", by Bradnam and Korf. For this course, the unix_primer is hard to beat. Please bookmark this and get familiar with part 1 and part 2.
 
 Also, please have a look at the excellent [tutorial from software carpentry](http://swcarpentry.github.io/shell-novice/). For this week and next, follow steps 1 through 3.

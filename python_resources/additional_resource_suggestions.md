@@ -11,3 +11,5 @@ https://pythonforbiologists.com/introduction
 https://docs.python.org/3/
 
 3). [Real Python](https://realpython.com/) tutorial page. Here you will find a large range of tutorials and video guides to a diverse range of python topics.
+
+4). [W3 schools python course](https://www.w3schools.com/python/). Good python tutorials and lessons.

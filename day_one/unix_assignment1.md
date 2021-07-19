@@ -21,7 +21,7 @@ For example:
 
     $ man pwd
 
-This will tell you what `pwd` does, command line options, etc. Here you will see the information on `pwd` displayed in a text viewer called `less`. You can move forward one page at a time with the space bar. `man` pages are always opened with `less`, a command you will use heavily.
+This will tell you what `pwd` does, command line options, etc. Here you will see the information on `pwd` displayed in a text viewer called `less`.  `man` pages are always opened with `less`, a command for text viewring you will use regularly. You can move forward one page at a time with the space bar, and exit `less` by typing q.
 
 
 
@@ -107,18 +107,8 @@ Will list processes running on your machine.
 
 Open another terminal window (`command n`) and use `less` to look at the top of a text file. Type `top` in the other terminal and look for the line showing that less is running.
 
-## Using basic Unix to explore features of a file of Illumina DNA sequencing data.
 
-Make a directory in your home directory (e.g., /Users/parchman/) entitled GAIN_Unix.
-
-Make a file called unix1_log.txt in the GAIN_Unix directory. When you are done with this assignment, record everything you did from the command line in this log file (learn to use `touch` to make a new file).
-
-Inside this directory, make three other directories (using `mkdir`) named:
-- data
-- scripts
-- resources
-		
-Try some other useful commands:
+ ### Try some other useful commands:
 
     $ whatis date
     $ whatis grep

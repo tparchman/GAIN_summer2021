@@ -168,26 +168,39 @@ If you have mutliple processes running, and want to kill one, use `kill` followe
 
     $ kill 9031
 
-## 7. Regular expressions and text extraction with `grep`
+## 7. Using Unix to explore features of a file of Illumina DNA sequencing data.
 
-`grep` is a powerful regular expression engine, among the most commonly used commands for data science. You can explore the examples below using sample_passerina.fastq, available under week1 on the [course github page](https://github.com/tparchman/BIOL792). This is an increbily versatile command, so we better learn more. In it simplest invocation, `grep` with output every line in a file that matches the specified pattern.
+Make a directory in your home directory (e.g., /Users/parchman/) entitled GAIN_Unix.
+
+Make a file called unix1_log.txt in the GAIN_Unix directory. When you are done with this assignment, record everything you did from the command line in this log file (learn to use `touch` to make a new file).
+
+Inside this directory, make three other directories (using `mkdir`) named:
+- data
+- scripts
+- resources
+
+Download the example file “sample_passerina.fastq” from the course website for the unix1 assignment, and use the command line move it into the data directory you made above. 
+
+`grep` is a powerful regular expression engine, among the most commonly used commands for data science. You can explore the examples below using sample_passerina.fastq, available under day1 on the [course github page](https://github.com/tparchman/GAIN_summer2021). This is an increbily versatile command, so we better learn more. In it simplest invocation, `grep` with output every line in a file that matches the specified pattern.
 
 Since fastq files have a standard four line format (ID starting with @, DNA sequence, quality id starting with +, and quality score), we know that every sequence has a line starting with @ associated with it. 
 
-We could write all of teh ID lines to a separate file:
 
-$ grep "^@" -c sample_passerina.fastq > idlines.txt
+We can count the number of sequences (there is one ID line per sequence; ^ denotes beginning of line anchor):
 
-We can cound the number of sequences:
+    $ grep "^@" -c sample_passerina.fastq
 
-$ grep "^@" -c sample_passerina.fastq
+We could write all of the ID lines to a separate file:
+
+    $ grep "^@" sample_passerina.fastq > idlines.txt
+
 
 We can print the line with a match, plus any number of lines following it:
 
-grep "^@" -A 1 sample_passerina.fastq
+    $ grep "^@" -A 1 sample_passerina.fastq
 
 SDN_AM_43432 is the ID of a specific bird represented in this data set. How many DNA sequences do we have for this bird?
 
-$ grep "SDN_AM_43432" -c sample_passerina.fastq
+    $ grep "SDN_AM_43432" -c sample_passerina.fastq
 
 

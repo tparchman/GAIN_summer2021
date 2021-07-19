@@ -3,13 +3,12 @@
 ## Topics to cover
 
 - `man` pages
-- bash_profile
+- .bash_profile or .zshrc
 - text viewing and in terminal text editors
 - compression, decompression
 - more Unix commands, redirection
 - process monitoring
 - introduction to `grep`
-- **In book, last 5 pages of chapter 4; chapter 5.**
 - **U10 through U27 in Bradnam and Korf primer (http://korflab.ucdavis.edu/Unix_and_Perl/current.html)**
 <p>&nbsp;</p>
 

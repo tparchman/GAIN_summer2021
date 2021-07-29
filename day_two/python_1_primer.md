@@ -256,7 +256,7 @@ If you want to change among variables, you have some options with the `float`, `
 
 ## 4B. `%` operator: controlling format of scalars in print statements 
 
-### In print statements, the first `%` is used as a placeholder that denotes what type of variable is to be specified:  %d for integer, %f for float, and %s for string. After the quoted statement, the second `%` is used before the variabe name is provided in (). %f is also used to specify the number of digits after a decimal (see below).
+### In print statements, the first `%` is used as a placeholder that denotes what type of variable is to be specified:  **%d for integer, %f for float, and %s for string**. After the quoted statement, the second `%` is used before the variable name is provided in (). %f is also used to specify the number of digits after a decimal (see below).
 
 Have a look at the examples in Haddock and Dunn. Here are a few more. The first uses a string assigned to the variable name within the print statement.
 
@@ -270,7 +270,7 @@ The example below stores three integers. They are each separately printed within
     A=10
     R=16
     print("%d points, %d assists, %d rebounds for Lebron" %(P, A, R))
-    # will print" 38 points, 10 assists, 16 rebounds for Lebron
+    # will print "38 points, 10 assists, 16 rebounds for Lebron"
 
 
 In python, floats can be represented with full precision, or controlled to a set number of positions. The latter will often be desirable to keep things tidy. The statements below will print 0.6666666666666666.
@@ -279,7 +279,13 @@ In python, floats can be represented with full precision, or controlled to a set
     print ("2/3 should equal roughly %.3f" % (Prod))
     # This will print "2/3 should equal roughly 0.667"
 
-# 5. A useful feature of python is the interactive prompt, which you can invoke by simply typing python (or python3, depending on your set up), as below. The interactive prompt can be used to test statements or blocks of code outside of your scripts, and/or to get help (`help()`, `dir()`)
+# 5. `input()` allows user input
+Use of this function allows user input from the command line while a program is being exectuted. For example, the with the code below in a script, 'enter value between 1 and 10:' will be printed to the terminal, and a value entered can then be assigned to that variable within the program.
+
+    X = input('enter a value between 1 and 10')
+    print("The entered value was " + X)
+
+# 6. A useful feature of python is the interactive prompt, which you can invoke by simply typing python (or python3, depending on your set up), as below. The interactive prompt can be used to test statements or blocks of code outside of your scripts, and/or to get help (`help()`, `dir()`)
 
     [tparchman@Thomass-MacBook-Pro python1]$ python
     Python 3.8.5 (default, Aug 16 2020, 12:28:59) 

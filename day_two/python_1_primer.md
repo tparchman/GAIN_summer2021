@@ -160,7 +160,7 @@ Strings can be repeated with `*`:
 
 
 
-### Python has a diverse array of string methods, or functions, that allow efficient work with strings. A few examples below will illustrate the syntax for using these methods.
+### Python has a diverse array of string methods (these are built in functions), that allow efficient work with strings. A few examples below will illustrate the syntax for using these methods.
 <p>&nbsp;</p>
 
 `str.upper()` will convert string to uppercase:

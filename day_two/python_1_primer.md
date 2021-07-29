@@ -1,11 +1,20 @@
+# Python primer I
+
+## Topics to cover
+
+- Getting started
+- First python program
+- Variables: strings and pythons
+- The interactive prompt
+
 # Why Python ?
 
-The idea of this course is to introduce scientists without any, or much, prior programming experience to a language that can be useful for their needs. The choice of the first programming language to learn may not be as important as you think; once you have learned one, learning additional languages will be much much easier, and you are nearly guaranteed to utilize additional languages at some point in your career. Nonetheless, the two scripting languages that have been most heavily used in bioinformatics and data science are **Perl** and **Python**. I have primarily used Perl for my needs, and have taught  courses with Perl in the past. However, given a general shift in usage trends and training opportunities, beginning several years ago, Ive switched to Python. There are a number of reasons for this:
+The idea of this course is to introduce scientists without any, or much, prior programming experience to a language that can be useful for their needs. The choice of the first programming language to learn may not be as important as you think; once you have learned one, learning additional languages will be much much easier, and you are nearly guaranteed to utilize additional languages at some point in your career. Nonetheless, the two scripting languages that have been most heavily used in bioinformatics and data science are **Perl** and **Python**. There are a number of reasons that Python has become the ideal language to learn first for data science:
 
 - It is one of the most common languages used in biology and other fields of science. Thus, you will be able to find a lot of documentation, guidance, examples, and opinion on the web.
 - It has excellent capabilities for manipulating text, suiting it well to bioinformatics and data science.
 - It uses consistent syntax, which makes learning specific code relatively easy.
-- It has many built in libraries to facilitate common tasks
+- It has many built in libraries to facilitate common tasks.
 - Python is very widely used, across science and inustry. 
 
 <p>&nbsp;</p>
@@ -38,7 +47,7 @@ If you have already installed Homebrew - you dont need to do this. Check if you 
 
     $ which brew
   
-If you dont have it, then:
+If you dont have `brew`, then:
 
     $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -53,7 +62,7 @@ Go to python.org and download the latest release
     https://www.python.org/downloads/mac-osx
 
 
-## Ubuntu
+## Installing or updating Python on Ubuntu
 It is probably already installed but if not try with the package manager `apt-get`
 
     $ sudo apt-get install python idle
@@ -270,9 +279,7 @@ In python, floats can be represented with full precision, or controlled to a set
     print ("2/3 should equal roughly %.3f" % (Prod))
     # This will print "2/3 should equal roughly 0.667"
 
-# 5. Using the interactive prompt to test statements or blocks of code outside of your scripts, and/or to get help (`help()`, `dir()`)
-
-### 5A. A useful feature of python is the interactive prompt, which you can invoke by simply typing python (or python3, depending on your set up), as below.
+# 5. A useful feature of python is the interactive prompt, which you can invoke by simply typing python (or python3, depending on your set up), as below. The interactive prompt can be used to test statements or blocks of code outside of your scripts, and/or to get help (`help()`, `dir()`)
 
     [tparchman@Thomass-MacBook-Pro python1]$ python
     Python 3.8.5 (default, Aug 16 2020, 12:28:59) 

@@ -1,4 +1,4 @@
-# BIOL 792-1028. Unix week one tasks (8/27/20)
+# BIOL 792-1028. Day one, introductory Unix
 
 
 ## Common commands: 
@@ -14,14 +14,14 @@ While getting used to the idea of these commands, it is useful to note that the 
 
 
 
-## 'man' pages. 
+## `man` pages. 
 For any Unix command (there are thousands) you can find the full information on that command by using  `man`. 
 
 For example: 
 
     $ man pwd
 
-This will tell you what `pwd` does, command line options, etc. Here you will see the information on `pwd` displayed in a text viewer called `less`. You can move forward one page at a time with the space bar. `man` pages are always opened with `less`, a command you will use heavily.
+This will tell you what `pwd` does, command line options, etc. Here you will see the information on `pwd` displayed in a text viewer called `less`.  `man` pages are always opened with `less`, a command for text viewring you will use regularly. You can move forward one page at a time with the space bar, and exit `less` by typing q.
 
 
 
@@ -89,7 +89,7 @@ To quickly remind yourself of where you are in a directory tree from anywhere on
 
     $ pwd
 
-## stopping jobs, exiting programs in the terminal
+## Stopping jobs, exiting programs in the terminal
 
 It is often necessary to put a stop to things that are happening in the terminal, but the means to that end can be context dependent. Here are two simple options that usually work:
 
@@ -107,29 +107,8 @@ Will list processes running on your machine.
 
 Open another terminal window (`command n`) and use `less` to look at the top of a text file. Type `top` in the other terminal and look for the line showing that less is running.
 
-## Using basic Unix to explore features of a file of Illumina DNA sequencing data.
 
-Make a directory in your home directory (e.g., /Users/parchman/) entitled BIOL792.
-
-Make a file called unix1_log.txt in the BIOL792 directory. When you are done with this assignment, record everything you did from the command line in this log file (learn to use `touch` to make a new file).
-
-Inside this directory, make three other directories named:
-- data
-- scripts
-- resources
-		
-
-
-Download the example file “sample_passerina.fastq” from the course website for the unix1 assignment, and use the command line move it into the data directory you made above. 
-
-- What is the size of this file, and when was it last modified? 
-- How many lines are in the file?
-- `grep` is a powerful pattern matching utility in unix. Executed to find a simple pattern match, it will print to screen every line that contains the specified text or flexible pattern (we call the expressions to fit these matches "regular expressions" and will learn much more on this later in the course). The file you are working with here is raw data from an Illumina sequencer. Each DNA sequence is represented by information on four lines. The lines starting with “@” are the IDs for each sequence, the following lines are always a DNA sequence (2nd), a quality ID (3rd), and the quality score for the previous sequence (4th). Study the `grep` `man` page, and use grep to find and count lines that start with "@". This will allow you to count the number of DNA sequences in the file.
-
-Try the `history` command. What do you see? You could find this quite useful. When you use the up and down arrow keys from the prompt, you are basically navigating up and down through this list. Try that out, and take note that you will probably use this feature regularly. 
-
-
-Try some other useful commands:
+ ### Try some other useful commands:
 
     $ whatis date
     $ whatis grep

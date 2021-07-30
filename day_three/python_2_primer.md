@@ -1,10 +1,14 @@
-# Python primer II, Data Science I, Fall 2020. 
+# Python primer II GAIN Summer 2021, day 3. 
 
 ## Topics to cover
 - lists
-- `if`, `else`, and `elif`
+- conditional statements: `if`, `else`, and `elif`
 - `for` loops
-- Haddock and Dunn chapter 9
+- working with files: input/output
+- introduction to libaries
+
+## Helpful materials.
+- Haddock and Dunn chapter 9 and Chapter 10 pdfs
 - updated document that has corrections for python3 where necessary (PythonLesson2_Chapter9.pdf)
 <p>&nbsp;</p>
 

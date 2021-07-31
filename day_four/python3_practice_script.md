@@ -9,11 +9,11 @@
 <p>&nbsp;</p>
 
 
-### This week you will work more with lists, and more importantly, will get comfortable reading IN and writing OUT. We are not literally reading in the contents of entire files at once, rather we are making connections (file objects or handles) between our program and these files. For each problem you will need to use a (`for`) loop to read data in one line at a time. The python_3_primer.md and slides from class should help to get you started.
+### Today we will work a bit more with lists, input/output, and will get introduced to using regular expressions for pattern matching and extraction.  The python_3_primer.md and slides from class should help to get you started.
+
 <p>&nbsp;</p>
 
 1.) Read in the input file genenames.txt line by line, and add the values from the second "column" of each line to a list. This file has two columns, the second of which lists gene names. Print the list to check that your script has worked. The output should be the second "column" of the file genenames.txt.
-<p>&nbsp;</p>
 
 **Hints**: You will need to use two lists, the first of which will be created by splitting each line into an list so that you can work on it. 2. You will need to ‘add’ elements to the second list (using `.append`) with each iteration of a while loop.
 

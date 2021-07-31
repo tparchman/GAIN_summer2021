@@ -1,4 +1,4 @@
-# Python assignment 1
+# GAIN summer 2021, Python day 1 practice scripts
 
 ## Topics to cover
 - Getting started

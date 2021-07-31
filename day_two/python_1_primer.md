@@ -119,7 +119,7 @@ Or, change to executable, then run:
     $ chmod u+x first_script.py
     $ ./first_script.py
 
-If all is in order, "Im ready to learn python, and this is my first step should print to the screen", and you are ready for more.
+If all is in order, "Im ready to learn python, and this is my first step" should print to the screen, and you are ready for more.
 <p>&nbsp;</p>
 
 # `#`: comment character, annotating your code.

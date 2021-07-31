@@ -1,4 +1,4 @@
-# Python primer I
+# GAIN summer 2021, Python primer I
 
 ## Topics to cover
 

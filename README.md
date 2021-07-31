@@ -37,13 +37,13 @@ Specific Student Learning Outcomes:
 * **Supplemental primers, readings and assignments** are provided on the [workshop github page](https://github.com/tparchman/GAIN_summer2021).
 
 ### Suggested for more in depth learning
-* **Practical computing for biologists** Haddock, S.H.D. and Dunn, C.W., 2011. Sunderland, MA, USA: Sinauer Associates. The book is used for both .
+* **Practical computing for biologists** Haddock, S.H.D. and Dunn, C.W., 2011. Sunderland, MA, USA: Sinauer Associates. The book is very useful for both Unix and Python.
 
 ## Workshop Format
-We will meet from 9:00-12:00 each morning from August 9th to August 11th. At the beginning of each session, we will introduce new concepts and material that will form the basis of the exercises, assignments, or projects we will work through that session. We will cover questions regarding current or previous material, and then students will spend at least half of each class working on writing code independently or in small groups. Students will get the most out of each session if they review the primers and outlines of concepts ahead of time. 
+We will meet from 9:00-12:00 each weekday morning from August 6th to August 12th. At the beginning of each session, we will introduce new concepts and material that will form the basis of the exercises, assignments, or projects we will work through that session. We will cover questions regarding current or previous material, and then students will spend at least half of each class working on writing code independently or in small groups. Students will get the most out of each session if they review the primers and outlines of concepts ahead of time. 
 
 
-*MAYBE* As the class will be remote this session, we will hold our weekly meetings at prescheduled zoom sessions [zoom invite](https://unr.zoom.us/j/92025861279)
+*MAYBE* As the class will be remote this session, we will hold our meetings over zoom. I will send a link to all participants each morning prior to starting.
 
 ## Workshop Material Organization
 
@@ -55,9 +55,12 @@ The material for each day of the workshop will be organized in separate director
 *Tentative Workshop Schedule. All contents are subject to change.
 
 | Date    |  Topic          |  Assignment |
-| ------- | ---------------| -------------| 
-| Aug. 9  | Intro, Unix    | Worksheet I    | 
-| Aug. 10  |	Unix II, Python | Worksheet 2 |
-| Aug. 11  |	Python I	   | Unix III                       | Homework 1   |
-| Aug. 12  |	Python	II   | Unix 
-| ------- | ---------------| -------------| 
+| --------- | ---------------| -------------| 
+| Aug. 6  | Intro, Unix    | Unix assignments  | 
+| Aug. 9  |	Python I | python1_practice_scripts.md |
+| Aug. 10  |	Python II	   | python2_practice_scripts.md |
+| Aug. 11  |	Python	III   | python3_practice_scripts.md |
+| Aug. 12  |	Python	IV   | python4_practice_scripts.md | 
+| --------- | ---------------| --------------------------------| 
+|
+

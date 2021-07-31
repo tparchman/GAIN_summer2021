@@ -1,4 +1,4 @@
-# Unix primer 1
+# GAIN 2021, Unix primer 1
 
 ## Topics to cover today
 - getting familiar with Unix

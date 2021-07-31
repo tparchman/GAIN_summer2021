@@ -1,6 +1,6 @@
-# BIOL 792-1028. Unix week two tasks (8/26/20)
+# GAIN summer 2021, Unix practice tutorial 2
 
-**example files to work with:**
+**download the below files from day_one/:**
 passerina_sample.fastq.gz, yeast_genome.gff
 
 
@@ -105,7 +105,13 @@ SDN_AM_43432 is the ID of a specific bird represented in this data set. How many
     $ grep "SDN_AM_43432" -c sample_passerina.fastq
 
 
-**F**. This file contains DNA sequence data for 192 different individual birds. Lets say you want to know how many reads are present for a certain individual. Use `grep` to count the number of sequences for the individual named "NVP_CY_48147". You will notice here that you only need to count the id lines. 
+**F**. This file contains DNA sequence data for 192 different individual birds. Lets say you want to know how many reads are present for a certain individual. Use `grep` to count the number of sequences for the individual named "NVP_CY_48147". You will notice here that you only need to count the id lines.
+
+**G** Use a similar command to extract all of the data for the same individual and write to a file. 
+
+Hints: 
+- Look at the man page and learn how to grab the 3 lines following each match (each DNA sequence entry in this file has 4 lines associated with it, starting with the id line.)
+- use redirection to write STDOUT to a new file.
     
 
 

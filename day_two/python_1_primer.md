@@ -356,13 +356,21 @@ Note, for the examples shown above in sections 3A and 3B could be tested using t
 <p>&nbsp;</p>
 
 
-# Python documentation and other useful resources
+# Python documentation and other useful resources. 
+
+I strongly recommend you explore several of the below resources and tutorials.
 
 [Python documentation](https://www.python.org/doc/)
 
 [Python for Biologists](https://pythonforbiologists.com/introduction)
 
-### Chapter 8 differences between python2 and python3 (syntax changes that will require slight modification of book examples)
+[Learn Python Interactive - has built in interpretter](https://www.learnpython.org/)
+
+[Python guru - excellent, also has built in interpretter](https://thepythonguru.com/)
+
+<p>&nbsp;</p>
+
+### If you are using Haddock and Dunn text, be aware that it is based on python2, and there are some important differences between python2 and python3 (syntax changes that will require slight modification of book examples)
 
 1. print statements in python3 should use (). 
 2. `raw_input()` has become just `input()`

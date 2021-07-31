@@ -1,5 +1,4 @@
-# BIOL 792-1028. Day one, introductory Unix
-
+# GAIN 2021, Introductory Unix tutorial
 
 ## Common commands: 
 
@@ -12,18 +11,12 @@ While getting used to the idea of these commands, it is useful to note that the 
     cat         less            head        tail
     grep        wc              uniq	    top
 
-
-
 ## `man` pages. 
 For any Unix command (there are thousands) you can find the full information on that command by using  `man`. 
-
-For example: 
 
     $ man pwd
 
 This will tell you what `pwd` does, command line options, etc. Here you will see the information on `pwd` displayed in a text viewer called `less`.  `man` pages are always opened with `less`, a command for text viewring you will use regularly. You can move forward one page at a time with the space bar, and exit `less` by typing q.
-
-
 
 Next, look at:
 
@@ -66,7 +59,7 @@ The following command would move a file into the directory Macintosh HD, which a
 
 Note: there is a `\ ` before HD. This is because the directory name (“Machintosh HD”) has a space in it.
 
-*In general, when making and naming directories in unix, you will want to avoid using spaces because they require extra typing and the `\ ` needs to be used instead of just “ “. SPACES IN DIRECTORY NAMES = BAD.* Don't do it. Ever.
+In general, when making and naming directories or files in unix, you will want to avoid using spaces because they require extra typing and the `\ ` needs to be used instead of just “ “. If you have been using spaces in file or directory names, you will quickly learn that it causes headaches.
 
 What do you think the following command will do? Try it and find out:
 
@@ -118,10 +111,10 @@ Open another terminal window (`command n`) and use `less` to look at the top of 
     $ cal
 
 
-## Unix tutorials: COMPLETE THE FIRST 2-3 sections of each of the below tutorials. This will help you get up to speed and or solidify introductory Unix commands.
+## **Unix tutorials:** Complete the first 2-3 sections of each of the below tutorials. This will help you get up to speed and or solidify introductory Unix commands.
 
 Lastly for our first day, work through the first two sections of this tutorial to reiterate your introduction.
 
-Useful primer from "Unix and Perl to the Rescue", by Bradnam and Korf. For this course, the unix_primer is hard to beat. Please bookmark this and get familiar with part 1 and part 2.
+Useful primer from [Unix and Perl to the Rescue](http://korflab.ucdavis.edu/Unix_and_Perl/current.html), by Bradnam and Korf. Work through the beginning unix sections this morning (U1-U30). 
 
-Also, please have a look at the excellent [tutorial from software carpentry](http://swcarpentry.github.io/shell-novice/). For this week and next, follow steps 1 through 3.
+Also, please have a look at the excellent [tutorial from software carpentry](http://swcarpentry.github.io/shell-novice/). This morning I suggest exploring 1 through 3.

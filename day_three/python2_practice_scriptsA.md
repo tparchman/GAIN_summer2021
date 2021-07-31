@@ -15,27 +15,24 @@
 
 A. Get rid of everything other than the DNA sequence (using `str.replace`), and save this to another string.
 
-<p>&nbsp;</p>
+
 
 
 B. Change the DNA sequence string to contain uppercase rather than lower case. 
-<p>&nbsp;</p>
 
 C. Count the number of Gs, Cs, Ts, and As in the DNA sequence, calculate and print out the GC content of the sequence (Number of C and G bases divided by total sequence length)
 <p>&nbsp;</p>
 
 
-<p>&nbsp;</p>
-
 ## 2. Here we are going to practice manipulating a simple list. Execute the tasks for each letter in one script and provide informative print statements to track your progress. Lets start with a single scalar:
 
     DNA_Seq = 'A,C,G,T,A,A,A,T,G,C,C,A,T,G,C,C,G,G,A,A,T,C,G,A,T,T,T'
 
-A. Work with DNA_Seq above, which is currently a string. Often you will read in large files of ',' separated values one line at a time. One way to extract items from that line (or the thousands that may follow) is to split the string based on ',' and create a list out of the line. This way, you can easily use list indeces to work on specified “columns” of data, or you can loop through the list with something like `for` in order to perform the same task on each list element. Use `str.split` to turn this string into an list where each element is something contained between the commas. Note that if you were to try to use `list()` to convert the string to a list, you would end up with commas as additional list elements.
 <p>&nbsp;</p>
 
+A. Work with DNA_Seq above, which is currently a string. Often you will read in large files of ',' separated values one line at a time. One way to extract items from that line (or the thousands that may follow) is to split the string based on ',' and create a list out of the line. This way, you can easily use list indeces to work on specified “columns” of data, or you can loop through the list with something like `for` in order to perform the same task on each list element. Use `str.split` to turn this string into an list where each element is something contained between the commas. Note that if you were to try to use `list()` to convert the string to a list, you would end up with commas as additional list elements.
+
 B. Note that `.join` is the opposite of `str.split`, and can be used to turn an list back into a string. The syntax is a bit different for `.join`, where the delimiter must be specified before the `.`. This is a task you might routinely encounter. Use `.join` to turn the list you made above back into a comma delimited string.
-<p>&nbsp;</p>
 
 C. Lets go back to the list you made in A. Add the additional list, specified below, to the end of the first list (essentially, concatenate the two DNA sequences together.
 
@@ -48,7 +45,6 @@ D. Make a new list that only contains the first 10 bases of the list you made in
 
 
 ## 3. Lets try something else with lists, `for`, and some conditional statements.
-<p>&nbsp;</p>
 
 A. Make a list simple list of integers, starting with 1 and going to 100
     
@@ -65,9 +61,5 @@ Hints:
 	 
 - You will want to increment a variable each time through the loop to record array index. See the last section of the primer for this week for an example. This is done using something like `CTR+=1` So, each time through `for` the value of CTR will grow by one. By initializing `CTR=0` outside the loop, and incrementing it inside the loop, you can correctly associate each run through the list with the correct list index (e.g., the first time through the list).
 
-
-
-
-<p>&nbsp;</p>
 
 

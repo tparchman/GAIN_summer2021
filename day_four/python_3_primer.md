@@ -74,7 +74,7 @@ Matches can be extracted as below, although we will cover capturing and storing 
 
 Note that above, `re.search` only stores one ATC, even though there are 3 in Seq. Thats because `re.search` only makes one match. `re.findall` and `re.finditerate` find, track, and store multiple matches. More on these below.
 
-# 2 Basic syntax for regular expression matching
+# 2. Basic syntax for regular expression matching
 
 Syntax for regular expressions is mostly consistent across many languages, including Unix, Perl, and Python. The regular expression cheat sheet posted with the course materials will be helpful here; I suggest keeping that or similar cheat sheet close by. The table below illustrates some of the most commonly used expressions
 

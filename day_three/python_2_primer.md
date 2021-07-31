@@ -1,4 +1,4 @@
-# Python primer II GAIN Summer 2021, day 3. 
+# Python primer II, GAIN Summer 2021, day 3. 
 
 ## Topics to cover
 - lists

@@ -133,7 +133,7 @@ Example usage.
         print("Matched")
 <p>&nbsp;</p>
 
-## `re.finditer())`
+## `re.finditer()`
 
 `re.finditer()` can process multiple matches and returns a list of match objects which can be further processed in a loop.
 
@@ -236,10 +236,8 @@ We are accustomed to splitting strings based on delimiters such as ',', '\s', an
 
     Seq = 'CO_MT_134545 0   1 0   2 1'
     result = re.sub('CO_',  '',    Seq) # Deletes CO_
-    result = re.sub(r'\s+', ' ',   Seq) # Delete extra whitespaces 
+    result = re.sub(r'\s+', ' ',   Seq) # Delete extra white spaces, replaces with a single space. 
 
-    Let = 'abcdefghi'
-    result = re.sub('abc(def)ghi', r'\1', Let) # Replace string with a part of itself
 
 ## Example demo
 

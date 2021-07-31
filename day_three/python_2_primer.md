@@ -5,8 +5,7 @@
 - conditional statements: `if`, `else`, and `elif`
 - `for` loops
 - working with files (input/output)
-- processing command line arguments in your code
-- introduction to libraries (`import`, `sys`, and `re`)
+- introduction to libraries (`import`, `sys`)
 
 ## Helpful materials:
 - Haddock and Dunn chapter 9 and Chapter 10 pdfs (Haddock_Dunn_Chap10.pdf
@@ -274,7 +273,7 @@ If you provide a file name as an argument, `sys.argv[1]`, as above, the second e
 
 **Once you start processing files one line at a time,  you will realize that line ending characters (`\n`) often get in the way, and can be most effectively dealt with by removing them right off the bat. We can use the `.strip` function to do this as below.**
 
-    IN_data = IN_data.strip("\n")
+    IN_data = IN.strip("\n")
 
 
 ### Another way of doing this, following Haddock and Dunn:

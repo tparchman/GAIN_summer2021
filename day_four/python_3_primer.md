@@ -144,8 +144,7 @@ Example usage.
         base = m.group() 
         pos  = m.start() 
         print(base + str(pos))
-
-The code above finds each 
+ 
 
 ### `re.findall()`
 

@@ -1,7 +1,7 @@
 # pandas - Python data analysis library
 
 **Author: Trevor Faske  
-Modified: 02/28/2021**
+Modified: 08/04/2021**
 
 pandas is a must learn tool for data science. It is a powerful python package and swiss army knife for all data analysis. "The name is derived from the term 'panel data', an econometrics term for data sets that include observations over multiple time periods for the same individuals. Also a play on the phrase 'Python data analysis.'" - wikipedia
 
@@ -82,19 +82,15 @@ type(d1)
 `numpy.ndarray`  
 
 
-
 #### create 2-D array
-
 
 ```python
 d2 = np.array([[1,3,5],[2,4,6]])
 print(d2)
 ```
-OUT:
-```
-[[1 3 5]
-[2 4 6]]
-```
+`[[1 3 5]`  
+`[2 4 6]]`
+
 
 #### get dimensions and total size
 
@@ -103,11 +99,8 @@ OUT:
 print(d2.shape) #rows, columns
 print(d2.size) 
 ```
-OUT:
-``` 
-(2, 3)
-6
-```
+`(2, 3)`  
+`6`  
 
 ### Accessing and indexing arrays work very similar to lists but with added dimension. Very similar to R indexing 
 
@@ -121,12 +114,8 @@ print(d2[1,0])
 # 1st row, 3rd column
 print(d2[0,2])
 ```
-OUT:
-``` 
-2
-5
-```
-
+`2`  
+`5`  
 
 #### Slicing works very similarly to lists
 
@@ -135,10 +124,7 @@ OUT:
 #extract first 2 elements of the 2nd row
 print(d2[1,:2])
 ```
-OUT:
-``` 
-[2 4]
-```
+`[2 4]`
 
 
 ### arange and reshape array format
@@ -149,11 +135,10 @@ d1 = np.array([1,3,5,2,4,6])
 print(d1)
 d1.reshape(2,3)
 ```
+`[1 3 5 2 4 6]`  
 
-    [1 3 5 2 4 6]
-
-    array([[1, 3, 5],
-           [2, 4, 6]])
+`array([[1, 3, 5],`  
+`[2, 4, 6]])`
 
 
 
@@ -161,9 +146,7 @@ d1.reshape(2,3)
 ```python
 d2.reshape(1,6)  
 ```
-    array([[1, 3, 5, 2, 4, 6]])
-
-
+`array([[1, 3, 5, 2, 4, 6]])`
 
 #### create 1D array 0-9
 
@@ -171,9 +154,7 @@ d2.reshape(1,6)
 ```python
 np.arange(10)
 ```
-    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-
-
+`array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])`
 
 #### array 0 to 50 by 5 (start,stop,step)
 
@@ -181,10 +162,7 @@ np.arange(10)
 ```python
 np.arange(0,51,5)
 ```
-
-    array([ 0,  5, 10, 15, 20, 25, 30, 35, 40, 45, 50])
-
-
+`array([ 0,  5, 10, 15, 20, 25, 30, 35, 40, 45, 50])`
 
 ### Random number generator
 
@@ -203,7 +181,7 @@ from numpy import random
 ```python
 random.rand()
 ```
-0.9067011502597366
+`0.9067011502597366`
 
 
 
@@ -213,7 +191,7 @@ random.rand()
 ```python
 random.rand(5)
 ```
-    array([0.59207941, 0.04192336, 0.54585234, 0.90507268, 0.80355514])
+`array([0.59207941, 0.04192336, 0.54585234, 0.90507268, 0.80355514])`
 
 
 
@@ -223,7 +201,7 @@ random.rand(5)
 ```python
 random.randint(100)
 ```
-    39
+`39`
 
 
 
@@ -233,7 +211,7 @@ random.randint(100)
 ```python
 random.randint(100, size = 7)
 ```
-    array([89,  2, 69, 35, 31, 44, 40])
+`array([89,  2, 69, 35, 31, 44, 40])`
 
 
 
@@ -243,8 +221,8 @@ random.randint(100, size = 7)
 ```python
 random.randint(100, size=(2,3))
 ```
-    array([[ 5, 61, 26],
-           [ 1,  9, 59]])
+`array([[ 5, 61, 26],`  
+`[ 1,  9, 59]])`
 
 
 
@@ -256,19 +234,16 @@ random.randint(100, size=(2,3))
 ```python
 random.choice([3, 5, 7, 9])
 ```
-    3
-
-
+`3`
 
 #### sample 4 elements from list 
-
 
 ```python
 random.choice([3, 5, 7, 9],size=(3,4))
 ```
-    array([[5, 5, 9, 9],
-           [5, 7, 9, 7],
-           [5, 7, 9, 5]])
+`array([[5, 5, 9, 9],`  
+`[5, 7, 9, 7],`  
+`[5, 7, 9, 5]])`  
 
 
 
@@ -285,38 +260,24 @@ print(x.max())
 print(x.min())
 print(x.mean())
 ```
+`100`  
+`995`  
+`10`  
+`549.76`  
 
-    100
-    995
-    10
-    549.76
-
+</br>
 
 ## Getting started with pandas - finally to the good stuff! 
 
-#### side note: 
-
-Nice thing about jupyter notebooks is it accepts linux commands, just as the terminal
-
-
-```python
-### Change to pandas working directory
-pandas_dir = '/data/gpfs/home/tfaske/g/DataScience/Data_Science_For_Biology_II/Part.II_PythonProgramming/pandas/'
-
-
-### Read and write files (using DataFrame) 
-
-Make sure you have **states_covid.csv** in your pandas directory from above
+**note:** *make sure you have your **PATH** correct*
 
 
 ```python
 import pandas as pd
 
-state_covid_df = pd.read_csv('states_covid.csv') #read in csv
+state_covid_df = pd.read_csv('PATH/states_covid.csv') #read in csv, change PATH
 state_covid_df.head() #views the top 5 lines
 ```
-
-
 
 
 <div>
@@ -492,11 +453,7 @@ state_covid_df.head() #views the top 5 lines
 ```python
 state_covid_df.shape #row, column length
 ```
-
-
-
-
-    (20108, 41)
+`(20108, 41)`
 
 
 
@@ -504,11 +461,7 @@ state_covid_df.shape #row, column length
 ```python
 state_covid_df.columns #views the column names
 ```
-
-
-
-
-    Index(['date', 'state', 'death', 'deathConfirmed', 'deathIncrease',
+`Index(['date', 'state', 'death', 'deathConfirmed', 'deathIncrease',
            'deathProbable', 'hospitalized', 'hospitalizedCumulative',
            'hospitalizedCurrently', 'hospitalizedIncrease', 'inIcuCumulative',
            'inIcuCurrently', 'negative', 'negativeIncrease',
@@ -523,9 +476,9 @@ state_covid_df.columns #views the column names
            'totalTestsPeopleAntibody', 'totalTestsPeopleAntigen',
            'totalTestsPeopleViral', 'totalTestsPeopleViralIncrease',
            'totalTestsViral', 'totalTestsViralIncrease'],
-          dtype='object')
+          dtype='object')`
 
-
+</br>
 
 While the above example is very straight forward with a clean csv file, **pd.read_csv()** is a very powerful tool for reading/parsing complicated data. For more information of all the commands it has, visit here: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html. Otherwise, google is your best friend. Any issue you have, someone has figured it out already. 
 
@@ -618,7 +571,7 @@ state_covid_sub_df.head()
 </table>
 </div>
 
-
+</br>
 
 #### check and make sure dtypes are right (dates specifically)
 
@@ -626,19 +579,15 @@ state_covid_sub_df.head()
 ```python
 state_covid_sub_df.dtypes
 ```
+`date                datetime64[ns]`  
+`state                       object`  
+`death                      float64`  
+`negative                   float64`  
+`positive                   float64`  
+`totalTestResults           float64`  
+`dtype: object`
 
-
-
-
-    date                datetime64[ns]
-    state                       object
-    death                      float64
-    negative                   float64
-    positive                   float64
-    totalTestResults           float64
-    dtype: object
-
-
+</br>
 
 ### write DataFrame to outfile 
 (https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_csv.html)
@@ -648,7 +597,6 @@ state_covid_sub_df.dtypes
 
 ```python
 outfile_path = pandas_dir + 'state_covid_sub.csv'
-#outfile_path = os.path.join(pandas_dir,'state_covid_sub.csv')
 state_covid_sub_df.to_csv(path_or_buf=outfile_path,index=False)
 ```
 
@@ -748,14 +696,13 @@ new_covid_df.head()
 </table>
 </div>
 
-
+</br>
 
 #### two ways to change column names totalTestResults to total 
-first changes all colums:  
+first, changes all columns:  
 `new_covid_df.columns = ['date','state','death','positive','negative','total']`  
 
-Second code below:  
-changes only selected column  
+Second,changes only selected column  
 axis = (0 = rows, 1 = columns)  
 inplace=True replaces the current DataFrame, same as (df = df.DOSOMETHING) 
 
@@ -859,7 +806,7 @@ new_covid_df = new_covid_df.iloc[:,[0,1,5,4,3,2]] #iloc is how you access df lik
 ```python
 new_covid_df.iloc[2,3]
 ```
-    2359571.0
+`2359571.0`
 
 
 ```python
@@ -886,20 +833,19 @@ There's lots of crazy stuff you can do with dates, not going into it too much bu
 new_covid_df["date"]= pd.to_datetime(new_covid_df["date"],yearfirst=True) 
 new_covid_df.info()
 ```
-
-    <class 'pandas.core.frame.DataFrame'>
-    RangeIndex: 20108 entries, 0 to 20107
-    Data columns (total 7 columns):
-    date        20108 non-null datetime64[ns]
-    state       20108 non-null object
-    total       20006 non-null float64
-    negative    15640 non-null float64
-    positive    19912 non-null float64
-    death       19230 non-null float64
-    rate        19824 non-null float64
-    dtypes: datetime64[ns](1), float64(5), object(1)
-    memory usage: 1.1+ MB
-
+`<class 'pandas.core.frame.DataFrame'>`  
+`RangeIndex: 20108 entries, 0 to 20107`  
+`Data columns (total 7 columns):`  
+`date        20108 non-null datetime64[ns]`  
+`state       20108 non-null object`  
+`total       20006 non-null float64`  
+`negative    15640 non-null float64`  
+`positive    19912 non-null float64`  
+`death       19230 non-null float64`  
+`rate        19824 non-null float64`  
+`dtypes: datetime64[ns](1), float64(5), object(1)`  
+`memory usage: 1.1+ MB`
+</br>
 
 #### add a column for day of year/julian date
 
@@ -908,9 +854,6 @@ new_covid_df.info()
 new_covid_df['dayofyear'] = new_covid_df['date'].dt.dayofyear
 new_covid_df.head()
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -1011,26 +954,23 @@ First, we'll subset on Nevada only and peak in to what it is doing
 ```python
 new_covid_df.state == 'NV'
 ```
-
-
-
-
-    0        False
-    1        False
-    2        False
-    3        False
-    4        False
-             ...  
-    20103    False
-    20104    False
-    20105    False
-    20106    False
-    20107    False
-    Name: state, Length: 20108, dtype: bool
+`0        False`  
+`1        False`  
+`2        False`  
+`3        False`  
+`4        False`  
+`       ...  `  
+`20103    False`  
+`20104    False`  
+`20105    False`  
+`20106    False`  
+`20107    False`  
+`Name: state, Length: 20108, dtype: bool`  
 
 
 
 You can't really see where but it is outputtig a list of boolean (True,False) in the order they are found. If you put this statement as an index, it will keep only the Trues
+</br>
 
 **subsetting NV only**
 
@@ -1130,13 +1070,13 @@ NV_covid_df.head()
   </tbody>
 </table>
 </div>
-
+</br>
 
 
 Let's do one more filtering on states and something else numeric
 
-| means or   
-& means and
+| means **or**  
+& means **and**
 
 
 ```python
@@ -1310,9 +1250,6 @@ be careful with syntax of quotations
 ```python
 new_covid_df.query("state == 'NV' & rate > 0.10")
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -1572,7 +1509,7 @@ new_covid_df.head()
   </tbody>
 </table>
 </div>
-
+</br>
 
 
 ## Creating a DataFrame
@@ -1727,21 +1664,21 @@ movieRank_df
 ```python
 movieRank_df.mean(axis=1) #mean rank per movie
 ```
-    FaceOff           2.666667
-    RaisingArizona    2.833333
-    WeatherMan        1.500000
-    WickerMan         2.000000
-    Adaptation        1.166667
-    Gone60Seconds     1.500000
-    ConAir            2.666667
-    TheRock           1.166667
-    dtype: float64
+`FaceOff           2.666667`  
+`RaisingArizona    2.833333`  
+`WeatherMan        1.500000`  
+`WickerMan         2.000000`  
+`Adaptation        1.166667`  
+`Gone60Seconds     1.500000`  
+`ConAir            2.666667`  
+`TheRock           1.166667`  
+`dtype: float64`  
 
 
 
 We all know these numbers are of course wrong because there's no rank below a 5 that should be given, but just an example
 
-
+</br>
 
 ## Summarizing DataFrame
 
@@ -1751,7 +1688,7 @@ You will need **Bloom_etal_2018_Reduced_Dataset.csv** from Homework 3 python
 
 Summarizing data is important for figures, statistics, and general reporting
 
-*make sure you have your **PATH** correct*
+**note:** *make sure you have your **PATH** correct*
 
 
 ```python
@@ -1759,14 +1696,14 @@ bloom_df = pd.read_csv('Bloom_etal_2018_Reduced_Dataset.csv')
 print(bloom_df.shape)
 print(bloom_df.head())
 ```
+`(50, 4)`  
 
-    (50, 4)
-                       taxa  logbodysize  trophic_position         Reg
-    0        Alosa_alabamae     1.707570          0.431364  diadromous
-    1           Alosa_alosa     1.778151          0.556303  diadromous
-    2          Alosa_fallax     1.778151          0.556303  diadromous
-    3       Alosa_mediocris     1.778151          0.612784  diadromous
-    4  Alosa_pseudoharengus     1.602060          0.544068  diadromous
+`taxa  logbodysize  trophic_position         Reg`  
+`0        Alosa_alabamae     1.707570          0.431364  diadromous`  
+`1           Alosa_alosa     1.778151          0.556303 diadromous`  
+`2          Alosa_fallax     1.778151          0.556303  diadromous`  
+`3       Alosa_mediocris     1.778151          0.612784  diadromous`  
+`4  Alosa_pseudoharengus     1.602060          0.544068  diadromous`  
 
 
 Let's check out how many options there are for the *Reg* column
@@ -1775,11 +1712,7 @@ Let's check out how many options there are for the *Reg* column
 ```python
 bloom_df['Reg'].unique()
 ```
-
-
-
-
-    array(['diadromous', 'non-diadromous'], dtype=object)
+`array(['diadromous', 'non-diadromous'], dtype=object)`
 
 
 
@@ -1859,11 +1792,7 @@ bloom_reg_df
 ```python
 bloom_reg_df.index
 ```
-
-
-
-
-    Index(['diadromous', 'non-diadromous'], dtype='object', name='Reg')
+`Index(['diadromous', 'non-diadromous'], dtype='object', name='Reg')`
 
 
 
@@ -1873,15 +1802,11 @@ bloom_reg_df.index
 ```python
 bloom_reg_df.columns
 ```
-
-
-
-
-    MultiIndex([(     'logbodysize',  'mean'),
-                (     'logbodysize', 'count'),
-                ('trophic_position',  'mean'),
-                ('trophic_position', 'count')],
-               )
+`MultiIndex([(     'logbodysize',  'mean'),`  
+`(     'logbodysize', 'count'),`  
+`('trophic_position',  'mean'),`  
+`('trophic_position', 'count')],`  
+`)`
 
 
 
@@ -1952,22 +1877,10 @@ bloom_reg_df
 ```python
 x = bloom_reg_df['logbodysize_count']
 print(x)
-print(x)
 ```
-
-    Reg
-    diadromous        15
-    non-diadromous    35
-    Name: logbodysize_count, dtype: int64
-    Reg
-    diadromous        15
-    non-diadromous    35
-    Name: logbodysize_count, dtype: int64
-
-
-
-```python
-
-```
+`Reg`  
+`diadromous        15`  
+`non-diadromous    35`  
+`Name: logbodysize_count, dtype: int64`  
 
 # ta-daaaa, you're a pandas wizard now

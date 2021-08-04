@@ -1,6 +1,6 @@
-# Homework 4 - pandas (YOUR NAME HERE)
-### due 03/10/2021, to be turned on github  
-
+# Practice problems for pandas
+**Author: Trevor Faske  
+Modified: 08/04/2021**
 <br>
 
 Use this notebook and prompts to complete the homework. Throughout there will be hints and code provided to
@@ -11,17 +11,7 @@ Use this notebook and prompts to complete the homework. Throughout there will be
 - Bloom_etal_2018_Reduced_Dataset.csv
 - logfiles.tgz (or some other multiple file dataset)
 
-**hint:** change your working directory to a directory for just this homework. Edit path below and run.
-
-
-```python
-hw_dir = "your/homework/path/here"
-```
-
-
-```python
-cd $hw_dir
-```
+*NOTE*: Make sure your PATH is correct
 
 **import packages & check required datasets**
 
@@ -34,27 +24,17 @@ import pandas as pd
 
 
 ```python
-assert os.path.exists(os.path.join(hw_dir,'states_covid.csv')), 'states_covid.csv does not exist' 
+assert os.path.exists('PATH/states_covid.csv'), 'states_covid.csv does not exist' 
 ```
 
 
 ```python
-assert os.path.exists(os.path.join(hw_dir,'Bloom_etal_2018_Reduced_Dataset.csv')), 'Bloom_etal_2018_Reduced_Dataset.csv does not exist'
+assert os.path.exists('PATH/'Bloom_etal_2018_Reduced_Dataset.csv')), 'Bloom_etal_2018_Reduced_Dataset.csv does not exist'
 ```
 
+</br>
 
-```python
-!tar -xvzf logfiles.tgz
-log_dir = os.path.join(hw_dir,'logfiles')
-assert os.path.exists(log_dir), 'log_dir does not exist' 
-```
-
-
-```python
-
-```
-
-### Task 1 - DataFrame manipulation
+## Task 1 - DataFrame manipulation
 
 Using **states_covid.csv**, we are going to read the data in as a DataFrame to manipulate, subset, and filter in various ways. 
 
@@ -108,30 +88,21 @@ for example:
 
 ## Task 3 - Read in muliple files to a dictionary and make a DataFrame
 
-### This is not an easy excersize. You will have some example code to start but the rest is up to you. You have done all these parts before so should just be linking them together
+### This is not something you are expected to do in this course, but just here to give you an idea of the things that you COULD do. Answers to this Task are in python4_pandas_practice_answers.md
+
 
 Using **logfiles**: we are going to do read in each file, get some data, append it to a dictionary to later make into a dataframe. 
 
-First step is to find the necessary files. The number of files in the log files is 36, make sure you have that many as well
-
-
+**note:** *make sure to unzip logfiles*  
 ```python
-!ls -l logfiles/*txt | wc -l 
+#Done in the command line
+cd PATH
+tar -xvzf logfiles.tgz
 ```
-
-    36
-
-
-
-```python
-logfiles = !find ./logfiles -name *txt #unix command to find files
-logfiles = [os.path.abspath(x) for x in logfiles] #this finds the full path to the file
-print(logfiles[0])
-```
-
-
-```python
-assert(len(logfiles)==36), 'Do not have correct number of logfiles'
+``` python
+#Back to python  
+log_dir = os.path.join(PATH,'logfiles')
+assert os.path.exists(log_dir), 'log_dir does not exist' 
 ```
 
 ### Getting a little tricky here
@@ -166,19 +137,6 @@ infile.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -227,11 +185,13 @@ infile.head()
 
 Do everything in steps, make sure it works. Calculate summaries with this one infile:
 
-`minTemp =   
+```python
+minTemp =   
 maxTemp =  
 minDate = infile['Date'][infile['Temp'] == infile['Temp'].min()].unique()[0] #use this for minDate,maxDate  
 maxDate =   
-meanTemp =   `
+meanTemp =   
+```
 
 To get you started, I suggest writing some dummy code in plain words to help outline your for loop:
 

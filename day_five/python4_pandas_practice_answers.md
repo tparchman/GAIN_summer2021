@@ -1,5 +1,6 @@
-# Homework 4 - pandas (YOUR NAME HERE)
-### due 03/10/2021, to be turned on github  
+# Python4_pandas_practice_answers
+**Author: Trevor Faske  
+Modified: 08/04/2021**
 
 <br>
 
@@ -10,20 +11,6 @@ Use this notebook and prompts to complete the homework. Throughout there will be
 - states_covid.csv
 - Bloom_etal_2018_Reduced_Dataset.csv
 - logfiles.tgz (or some other multiple file dataset)
-
-**hint:** change your working directory to a directory for just this homework. Edit path below and run.
-
-
-```python
-hw_dir = "/data/gpfs/home/tfaske/g/DataScience/Data_Science_For_Biology_II/Part.II_PythonProgramming/pandas/" #"your/homework/path/here"
-```
-
-
-```python
-cd $hw_dir
-```
-
-    /data/gpfs/assoc/parchmanlab/tfaske/DataScience/Data_Science_For_Biology_II/Part.II_PythonProgramming/pandas
 
 
 **import packages & check required datasets**
@@ -52,43 +39,6 @@ log_dir = os.path.join(hw_dir,'logfiles')
 assert os.path.exists(log_dir), 'log_dir does not exist' 
 ```
 
-    logfiles/
-    logfiles/1901302136_H15_D_14.txt.txt
-    logfiles/1901302243_H5_S_14.txt.txt
-    logfiles/1901302110_H13_S_14.txt.txt
-    logfiles/1901302121_H8_S_14.txt.txt
-    logfiles/1901302228_H4_D_14.txt.txt
-    logfiles/1901302223_H16_S_14.txt.txt
-    logfiles/1901302117_H15_S_14.txt.txt
-    logfiles/1901302202_H16_S_14.txt.txt
-    logfiles/1901302115_H1_S_14.txt.txt
-    logfiles/1901302158_H9_S_14.txt.txt
-    logfiles/1901302237_H10_D_14.txt.txt
-    logfiles/1901302118_H1_D_14.txt.txt
-    logfiles/1901302120_H5_D_14.txt.txt
-    logfiles/1901302134_H13_D_14.txt.txt
-    logfiles/1901302109_H7_S_14.txt.txt
-    logfiles/1901302236_H17_D_14.txt.txt
-    logfiles/1901302141_H19_S_14.txt.txt
-    logfiles/1901302146_H14_D_14.txt.txt
-    logfiles/1901302137_H18_S_14.txt.txt
-    logfiles/1901302108_H7_D_14.txt.txt
-    logfiles/1901302240_H8_D_14.txt.txt
-    logfiles/1901302212_H9_D_14.txt.txt
-    logfiles/1901302214_H19_D_14.txt.txt
-    logfiles/1901302122_H3_D_14.txt.txt
-    logfiles/1901302138_H11_D_14.txt.txt
-    logfiles/1901302150_H14_S_14.txt.txt
-    logfiles/1901302194_H10_S_14.txt.txt
-    logfiles/1901302217_H18_D_14.txt.txt
-    logfiles/1901302227_H11_S_14.txt.txt
-    logfiles/1901302235_H6_S_14.txt.txt
-    logfiles/1901302203_H7_S_14.txt.txt
-    logfiles/1901302241_H2_D_14.txt.txt
-    logfiles/1901302225_H12_D_14.txt.txt
-    logfiles/1901302119_H4_S_14.txt.txt
-    logfiles/1901302224_H3_S_14.txt.txt
-    logfiles/1901302157_H12_S_14.txt.txt
 
 
 ### Task 1 - DataFrame manipulation
@@ -99,11 +49,9 @@ Using **states_covid.csv**, we are going to read the data in as a DataFrame to m
 
 
 ```python
-covid_df = pd.read_csv('states_covid.csv',
-                                 usecols=['date','state','hospitalized', 'hospitalizedCumulative',
-                                          'hospitalizedCurrently', 'hospitalizedIncrease', 'inIcuCumulative',
-                                          'inIcuCurrently','onVentilatorCumulative', 'onVentilatorCurrently',],
-                                 parse_dates=['date'],infer_datetime_format=True)
+covid_df = pd.read_csv('PATH/states_covid.csv',
+usecols=['date','state','hospitalized', 'hospitalizedCumulative','hospitalizedCurrently', 'hospitalizedIncrease', 'inIcuCumulative','inIcuCurrently','onVentilatorCumulative', 'onVentilatorCurrently',],
+parse_dates=['date'],infer_datetime_format=True)
 covid_df.head()
 ```
 
@@ -111,19 +59,7 @@ covid_df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -209,7 +145,7 @@ covid_df.head()
   </tbody>
 </table>
 </div>
-
+</br>
 
 
 **1.2 List, in order, the 5 states with the highest numbers of people *currently* hospitalized, in the ICU, and on ventilation**  
@@ -226,10 +162,9 @@ print('Top 5 ICU: ',topICU)
 topV = covid_df.sort_values(by='onVentilatorCurrently',ascending=False).state.unique()[:5]
 print('Top 5 Ventilation: ',topV)
 ```
-
-    Top 5 Hospital:  ['CA' 'NY' 'TX' 'FL' 'NJ']
-    Top 5 ICU:  ['NY' 'CA' 'TX' 'NJ' 'MI']
-    Top 5 Ventilation:  ['NY' 'NJ' 'MI' 'OH' 'IL']
+`Top 5 Hospital:  ['CA' 'NY' 'TX' 'FL' 'NJ']`  
+`Top 5 ICU:  ['NY' 'CA' 'TX' 'NJ' 'MI']`  
+`Top 5 Ventilation:  ['NY' 'NJ' 'MI' 'OH' 'IL']`  
 
 
 **1.3 Identify the date for each state where the cumulative hosipitalized was greater than or equal to 1000**
@@ -249,19 +184,6 @@ covid_1000_df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -305,7 +227,7 @@ covid_1000_df.head()
   </tbody>
 </table>
 </div>
-
+</br>
 
 
 
@@ -313,23 +235,7 @@ covid_1000_df.head()
 covid_1000_df.groupby('state').agg('min')
 ```
 
-
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -537,7 +443,7 @@ covid_1000_df.groupby('state').agg('min')
   </tbody>
 </table>
 </div>
-
+</br>
 
 
 ## Task 2 - DataFrame summarizing
@@ -564,19 +470,7 @@ bloom_df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -626,22 +520,16 @@ bloom_df.head()
   </tbody>
 </table>
 </div>
-
-
-
+</br>
 
 ```python
 bloom_df['genus'] = bloom_df['taxa'].str.split('_',expand=True)[0]
 bloom_df['species'] = bloom_df['taxa'].str.split('_',expand=True)[1]
 len(bloom_df['genus'].unique())
 ```
+`34`
 
-
-
-
-    34
-
-
+</br>
 
 **2.2 Create a new dataframe with the mean *logbodysize* and *trophicposition* of each genera. Sort this data frame by the largest body size. Print the head of this dataframe. Which genera is the smallest and largest? What is the trophic position of the smallest and largest?**
 
@@ -656,19 +544,6 @@ bloom_gen_df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -713,7 +588,7 @@ bloom_gen_df.head()
 </table>
 </div>
 
-
+</br>
 
 
 ```python
@@ -744,32 +619,44 @@ print('Smallest:',
     Smallest: 1    0.531479
     Name: trophic_position, dtype: float64
 
+</br>
 
 ## Task 3 - Read in muliple files to a dictionary and make a DataFrame
 
-### This is not an easy excersize. You will have some example code to start but the rest is up to you. You have done all these parts before so should just be linking them together
+### This is not something you are expected to do in this course, but just here to give you an idea of the things that you COULD do. Answers to this Task are in python4_pandas_practice_answers.md
+
 
 Using **logfiles**: we are going to do read in each file, get some data, append it to a dictionary to later make into a dataframe. 
+
+**note:** *make sure to unzip logfiles*  
+```python
+#Done in the command line
+cd PATH
+tar -xvzf logfiles.tgz
+```
+``` python
+#Back to python  
+log_dir = os.path.join(PATH,'logfiles')
+assert os.path.exists(log_dir), 'log_dir does not exist' 
+```
 
 First step is to find the necessary files. The number of files in the log files is 36, make sure you have that many as well
 
 
 ```python
+#command line
 !ls -l logfiles/*txt | wc -l 
 ```
-
-    ls: cannot access logfiles/*txt: No such file or directory
-    0
+`36`
 
 
 
 ```python
 logfiles = !find ./logfiles -name *txt #unix command to find files
 logfiles = [os.path.abspath(x) for x in logfiles] #this finds the full path to the file
-print(logfiles[0])
+print(logfiles[0]) #print to make sure right 
 ```
-
-    /data/gpfs/assoc/parchmanlab/tfaske/DataScience/Data_Science_For_Biology_II/Part.II_PythonProgramming/pandas/logfiles/1901302136_H15_D_14.txt.txt
+`/data/gpfs/assoc/parchmanlab/tfaske/DataScience/Data_Science_For_Biology_II/Part.II_PythonProgramming/pandas/logfiles/1901302136_H15_D_14.txt.txt`
 
 
 
@@ -809,19 +696,6 @@ infile.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -865,43 +739,35 @@ infile.head()
   </tbody>
 </table>
 </div>
-
+</br>
 
 
 
 ```python
 infile.dtypes
 ```
-
-
-
-
-    Date     object
-    Time     object
-    Temp    float64
-    dtype: object
-
-
+`Date     object`  
+`Time     object`  
+`Temp    float64`  
+`dtype: object`  
 
 
 ```python
 infile['Date'][infile['Temp'] == infile['Temp'].min()].unique()[0] #use this for minDate,maxDate
 ```
-
-
-
-
-    '10/28/2013'
+`10/28/2013`
 
 
 
 Do everything in steps, calculate summaries with this one file:
 
-`minTemp =   
+```python
+minTemp =   
 maxTemp =  
 minDate = infile['Date'][infile['Temp'] == infile['Temp'].min()].unique()[0] #use this for minDate,maxDate  
 maxDate =   
-meanTemp =   `
+meanTemp =   
+```
 
 To get you started, I suggest writing some dummy code in plain words to help outline your for loop:
 
@@ -940,57 +806,51 @@ for file in logfiles:
     logfiles_dict[file_name] = [minTemp,maxTemp,minDate,maxDate,meanTemp]
 print('\n\nDone parsing',len(logfiles),'files....... ')
 ```
-
-    parsing......  1901302136_H15_D_14
-    parsing......  1901302243_H5_S_14
-    parsing......  1901302110_H13_S_14
-    parsing......  1901302121_H8_S_14
-    parsing......  1901302228_H4_D_14
-    parsing......  1901302223_H16_S_14
-    parsing......  1901302117_H15_S_14
-    parsing......  1901302202_H16_S_14
-    parsing......  1901302115_H1_S_14
-    parsing......  1901302158_H9_S_14
-    parsing......  1901302237_H10_D_14
-    parsing......  1901302118_H1_D_14
-    parsing......  1901302120_H5_D_14
-    parsing......  1901302134_H13_D_14
-    parsing......  1901302109_H7_S_14
-    parsing......  1901302236_H17_D_14
-    parsing......  1901302141_H19_S_14
-    parsing......  1901302146_H14_D_14
-    parsing......  1901302137_H18_S_14
-    parsing......  1901302108_H7_D_14
-    parsing......  1901302240_H8_D_14
-    parsing......  1901302212_H9_D_14
-    parsing......  1901302214_H19_D_14
-    parsing......  1901302122_H3_D_14
-    parsing......  1901302138_H11_D_14
-    parsing......  1901302150_H14_S_14
-    parsing......  1901302194_H10_S_14
-    parsing......  1901302217_H18_D_14
-    parsing......  1901302227_H11_S_14
-    parsing......  1901302235_H6_S_14
-    parsing......  1901302203_H7_S_14
-    parsing......  1901302241_H2_D_14
-    parsing......  1901302225_H12_D_14
-    parsing......  1901302119_H4_S_14
-    parsing......  1901302224_H3_S_14
-    parsing......  1901302157_H12_S_14
+`parsing......  1901302136_H15_D_14`  
+`parsing......  1901302243_H5_S_14`  
+`parsing......  1901302110_H13_S_14`  
+`parsing......  1901302121_H8_S_14`  
+`parsing......  1901302228_H4_D_14`  
+`parsing......  1901302223_H16_S_14`  
+`parsing......  1901302117_H15_S_14`  
+`parsing......  1901302202_H16_S_14`  
+`parsing......  1901302115_H1_S_14`  
+`parsing......  1901302158_H9_S_14`  
+`parsing......  1901302237_H10_D_14`  
+`parsing......  1901302118_H1_D_14`  
+`parsing......  1901302120_H5_D_14`  
+`parsing......  1901302134_H13_D_14`  
+`parsing......  1901302109_H7_S_14`  
+`parsing......  1901302236_H17_D_14`  
+`parsing......  1901302141_H19_S_14`  
+`parsing......  1901302146_H14_D_14`  
+`parsing......  1901302137_H18_S_14`  
+`parsing......  1901302108_H7_D_14`  
+`parsing......  1901302240_H8_D_14`  
+`parsing......  1901302212_H9_D_14`  
+`parsing......  1901302214_H19_D_14`  
+`parsing......  1901302122_H3_D_14`  
+`parsing......  1901302138_H11_D_14`  
+`parsing......  1901302150_H14_S_14`  
+`parsing......  1901302194_H10_S_14`  
+`parsing......  1901302217_H18_D_14`  
+`parsing......  1901302227_H11_S_14`  
+`parsing......  1901302235_H6_S_14`  
+`parsing......  1901302203_H7_S_14`  
+`parsing......  1901302241_H2_D_14`  
+`parsing......  1901302225_H12_D_14`  
+`parsing......  1901302119_H4_S_14`  
+`parsing......  1901302224_H3_S_14`  
+`parsing......  1901302157_H12_S_14`  
     
-    
-    Done parsing 36 files....... 
+`Done parsing 36 files....... `  
 
 
 
 ```python
 list(logfiles_dict.items())[:5] #print first 5 items of dict
 ```
-
-
-
-
-    [('1901302136_H15_D_14',
+`[('1901302136_H15_D_14',
       [23.0, 91.4, '10/28/2013', '7/27/2014', 35.2911872615204]),
      ('1901302243_H5_S_14',
       [21.5, 68.4, '10/28/2013', '7/13/2014', 35.30480789716639]),
@@ -999,7 +859,7 @@ list(logfiles_dict.items())[:5] #print first 5 items of dict
      ('1901302121_H8_S_14',
       [17.9, 73.4, '10/28/2013', '7/13/2014', 34.69886589586862]),
      ('1901302228_H4_D_14',
-      [23.6, 64.1, '11/5/2013', '7/13/2014', 34.80269176136363])]
+      [23.6, 64.1, '11/5/2013', '7/13/2014', 34.80269176136363])]`
 
 
 
@@ -1020,19 +880,6 @@ logfiles_df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">

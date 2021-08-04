@@ -12,6 +12,7 @@ Use this notebook and prompts to complete the homework. Throughout there will be
 - Bloom_etal_2018_Reduced_Dataset.csv
 - logfiles.tgz (or some other multiple file dataset)
 
+*NOTE*: Make sure your PATH is correct
 
 **import packages & check required datasets**
 
@@ -24,21 +25,15 @@ import pandas as pd
 
 
 ```python
-assert os.path.exists(os.path.join(hw_dir,'states_covid.csv')), 'states_covid.csv does not exist' 
+assert os.path.exists('PATH/states_covid.csv'), 'states_covid.csv does not exist' 
 ```
 
 
 ```python
-assert os.path.exists(os.path.join(hw_dir,'Bloom_etal_2018_Reduced_Dataset.csv')), 'Bloom_etal_2018_Reduced_Dataset.csv does not exist'
+assert os.path.exists('PATH/'Bloom_etal_2018_Reduced_Dataset.csv')), 'Bloom_etal_2018_Reduced_Dataset.csv does not exist'
 ```
 
-
-```python
-!tar -xvzf logfiles.tgz
-log_dir = os.path.join(hw_dir,'logfiles')
-assert os.path.exists(log_dir), 'log_dir does not exist' 
-```
-
+</br>
 
 
 ### Task 1 - DataFrame manipulation

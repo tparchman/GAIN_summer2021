@@ -6,7 +6,7 @@
 ## GAIN program Summer 2021    
 **Prof**: Dr. Thomas Parchman; SFB 209; tparchman@unr.edu   
 **Co-instructor**: Trevor Faske; tfaske@nevada.unr.edu \
-**Workshop hours**: 9:00-12:00 AM, August 6, 9 - 11
+**Workshop hours**: 9:00-12:00 AM, August 6, 9 - 12
 
 
 ## Workshop Description
@@ -49,6 +49,19 @@ We will meet from 9:00-12:00 each weekday morning from August 6th to August 12th
 ## Workshop Material Organization
 
 The material for each day of the workshop will be organized in separate directories on [workshop github page](https://github.com/tparchman/GAIN_summer2021). Each of these directories will contain the slides that we will use to introduce material, a primer covering example Unix and Python code along with explanations, and a worksheet of programming practice exercises. There are also general directories on the repository with supplementary resources for Unix and Python, including cheat sheets, tutorials, and recommended resources for learning more.
+
+### Downloading material from github using `git`
+
+While you can download indidvidual files from github using your preferred web browser, you can also use the UNIX command to access github as well. Using git commands can get complicated very quickly, it is a very useful skill to have for reproducibility, tracking changes, and collaboration. We do not go over git in this course but there are many tutorials online (http://swcarpentry.github.io/git-novice/). 
+
+For this course, downloading individual files might suffice. But if you would like to download the entire repo, you can do so through the command line using the below command:
+
+**hint:** make a directory somewhere on your computer for this workshop. Run below command in that directory.
+
+```
+git clone https://github.com/tparchman/GAIN_summer2021
+```
+</br>
  
 
 ## Workshop Schedule

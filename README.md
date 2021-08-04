@@ -61,8 +61,6 @@ For this course, downloading individual files might suffice. But if you would li
 ```
 git clone https://github.com/tparchman/GAIN_summer2021
 ```
-</br>
- 
 
 ## Workshop Schedule
 *Tentative Workshop Schedule. All contents are subject to change.

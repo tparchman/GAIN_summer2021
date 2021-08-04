@@ -593,11 +593,11 @@ print('Largest:',
 print('Smallest:',
      bloom_gen_df['genus'][bloom_gen_df['logbodysize'] == bloom_gen_df['logbodysize'].min()])
 ```
+`Largest: 32    Tenualosa`  
+`Name: genus, dtype: object`  
 
-    Largest: 32    Tenualosa
-    Name: genus, dtype: object
-    Smallest: 1    Amazonsprattus
-    Name: genus, dtype: object
+`Smallest: 1    Amazonsprattus`  
+`Name: genus, dtype: object`  
 
 
 
@@ -608,11 +608,11 @@ print('Largest:',
 print('Smallest:',
      bloom_gen_df['trophic_position'][bloom_gen_df['logbodysize'] == bloom_gen_df['logbodysize'].min()])
 ```
+`Largest: 32    0.462398`  
+`Name: trophic_position, dtype: float64`  
 
-    Largest: 32    0.462398
-    Name: trophic_position, dtype: float64
-    Smallest: 1    0.531479
-    Name: trophic_position, dtype: float64
+`Smallest: 1    0.531479`  
+`Name: trophic_position, dtype: float64`  
 
 </br>
 

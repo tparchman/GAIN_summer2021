@@ -4,7 +4,7 @@
 - getting familiar with Unix
 - Text editors: why they are important, choosing among options
 - Introduction to basic Unix commands
-- Review 
+- Introductory tutorials, and some basic text processing with Unix tools
 
 ## Overview
 We will start by getting set up for the week. First, we will make sure everyone has Unix or Linux running on their computers. Second, we will choose a text editor to use for this course and for writing and editing code in general.

@@ -8,10 +8,11 @@
 - more Unix commands, redirection
 - process monitoring
 - introduction to `grep`
+- package installation
 
 <p>&nbsp;</p>
 
-## 1. `bash` or `zsh` profile
+## 1. `zsh` or `bash` profile
 
 You can can customize the way a command works from shell by creating an **alias**. For example, the below command will change things so that when you type `ls`, your terminal will call `ls -lh`
 

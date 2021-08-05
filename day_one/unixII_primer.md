@@ -140,5 +140,61 @@ If you have mutliple processes running, and want to kill one, use `kill` followe
 
     $ kill 9031
 
+## 6. Package installation
+
+This is a bit extra for what we are doing in the GAIN module, but I thought I would add it here as a guide for those interested. For installing on your personal mac computers, `brew` will be your most convenient option. I would stress here that this type of package installer/manager makes accomplishing these tasks in the Unix OS incredibly easy.
+
+**B. Unix on Mac Unix systems**
+
+`homebrew` manages and installs packages on Mac OS Unix. 
+To install brew (homebrew):
+
+    $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+`brew` is pretty easy to use. To look at a list of commands and their uses:
+
+    $ brew help
+
+To search for an installable program:
+
+    $ brew search
+
+To install a package:
+
+    $ brew install packagename
+
+As a simple example, lets install a more useful version of `top`, `htop`, that has some expanded information and visuals. Using brew is quite easy, as you can see.
+
+    $ brew install htop
+
+A more detailed, yet basic, tutorial can be found below. As with the above, carefully review before using.
+
+- https://wpbeaches.com/installing-homebrew-on-macos-big-sur-11-2-package-manager-for-linux-apps/
+
+**B. Linux distributions:**
+
+`apt` is a package management system for most Linux distributions. It facilitates the installation, management, updates, and removal of software. Using apt-get requires superuser privileges (`sudo`), and will require password entry.
+
+
+You can find useful tutorials on `apt` and `apt-get` below. We suggest reviewing information, and familiarizing yourself with `sudo` carefully before using.
+
+- https://phoenixnap.com/kb/how-to-use-apt-get-commands
+- https://itsfoss.com/apt-get-linux-guide/
+- https://www.control-escape.com/linux/lx-swinstall.html
+
+
+To install software using `apt-get`:
+
+    $ sudo apt-get install <package_name>
+
+To remove software using `apt-get`:
+
+    $ sudo apt-get remove <package_name> 
+
+Note, the above doesnt remove configuration files associated with a package. To remove the package along and configuration files:
+
+    $ sudo apt-get purge <package_name> 
+
+
 
 

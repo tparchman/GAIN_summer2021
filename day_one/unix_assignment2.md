@@ -1,6 +1,6 @@
 # GAIN summer 2021, Unix practice tutorial 2
 
-**download the below files from day_one/:**
+**download or be prepared to use the below files from day_one/:**
 passerina_sample.fastq.gz, yeast_genome.gff
 
 
@@ -26,6 +26,8 @@ The `&` will cause the job to run in the background. Thus, you will have the nor
 What if you had the job running in the background, but you realized that you wanted to kill the process anyway? Mistakes happen a lot during the debugging process, and we assure you that you will commonly need to kill jobs (sometimes many at once).  `^c` will not work for that. Execute your `jot` command again, with the high number of replicates and running in the background. Now, use process control commands to see which jobs are running and to kill `jot`. (hint: There are multiple ways to do this, think `top`, `ps`, and `kill`)
 
 
+**Note** if you inadvertently made numerous very large files as part of this exercise, be sure to remove them to reclaim disc space.
+
 ## 2. Extracting fields and sorting (`cut`, `sort`, `uniq`)
 
 Some useful Unix commands for extracting and organizing information from text, using the yeast_genome.gff file in the [day_one page](https://github.com/tparchman/GAIN_summer2021/tree/main/day_one).
@@ -45,14 +47,14 @@ Some useful Unix commands for extracting and organizing information from text, u
 
 ## 3. Using Unix to explore features of a file of Illumina DNA sequencing data.
 
-Make a directory in your home directory (e.g., /Users/parchman/) entitled GAIN_Unix.
+Within the directory you cloned from github for this module, make a new directory entitled "my_GAIN_Unix_Python".
 
 Inside this directory, make three other directories (using `mkdir`) named:
 - data
 - scripts
 - resources
 
-Download the example file “sample_passerina.fastq.gz” from the course website for the unix1 assignment, and use the command line move it into the data directory you made above. 
+locate the example file “sample_passerina.fastq.gz” from the day_one directory, and use the command line to move it into the data directory you made above. 
 
 ### Compression: 
 You will notice that this file has the extension .gz and is compressed. For working with large files, you will often want to compress and decompress files using unix commands. This is much faster than one of your apple or Microsoft programs, and can be used to compress or decompress many files simultaneously.

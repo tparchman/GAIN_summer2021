@@ -76,7 +76,7 @@ Use `less` to have a look at the top of sample_passerina.fastq file I have under
 
 ### In terminal text editors
 
-To access and edit text *within* the terminal, there are many editors (`vim`, `emacs`, etc.) you can use. For this course, I suggest `nano`, which will be avaialable on your system. Why would you want to use a keyboard controlled only in-terminal text editor instead of something like TextWrangler? Once we start working on remote servers, the time and place for such usage will become more clear. For now, just know it exists as an option, but do not make your life harder by trying to write your first bash or python programs in `nano`.
+To access and edit text *within* the terminal, there are many editors (`vim`, `emacs`, etc.) you can use. For this course, I suggest `nano`, which will be avaialable on your system. Why would you want to use a keyboard controlled only in-terminal text editor instead of something like TextWrangler? Once you start working on remote servers, the time and place for such usage will become more clear. For now, just know it exists as an option, but do not make your life harder by trying to write your first bash or python programs in `nano`.
 <p>&nbsp;</p>
 
 ## 3. Compression and decompression using gzip and gunzip
@@ -140,7 +140,31 @@ If you have mutliple processes running, and want to kill one, use `kill` followe
 
     $ kill 9031
 
-## 6. Package installation
+## 6. Regular expressions and text extraction with `grep`
+
+`grep` is a powerful regular expression engine, among the most commonly used commands for data science. You can explore the examples below using sample_passerina.fastq, available under week1 on the [course github page](https://github.com/tparchman/BIOL792). This is an increbily versatile command, so we better learn more. In it simplest invocation, `grep` with output every line in a file that matches the specified pattern.
+
+Since fastq files have a standard four line format (ID starting with @, DNA sequence, quality id starting with +, and quality score), we know that every sequence has a line starting with @ associated with it. 
+
+We could write all of teh ID lines to a separate file:
+
+$ grep "^@" -c sample_passerina.fastq > idlines.txt
+
+We can cound the number of sequences:
+
+$ grep "^@" -c sample_passerina.fastq
+
+We can print the line with a match, plus any number of lines following it:
+
+grep "^@" -A 1 sample_passerina.fastq
+
+SDN_AM_43432 is the ID of a specific bird represented in this data set. How many DNA sequences do we have for this bird?
+
+$ grep "SDN_AM_43432" -c sample_passerina.fastq
+
+
+
+## 7. Package installation
 
 This is a bit extra for what we are doing in the GAIN module, but I thought I would add it here as a guide for those interested. For installing on your personal mac computers, `brew` will be your most convenient option. I would stress here that this type of package installer/manager makes accomplishing these tasks in the Unix OS incredibly easy.
 

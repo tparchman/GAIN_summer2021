@@ -16,7 +16,7 @@ For any Unix command (there are thousands) you can find the full information on 
 
     $ man pwd
 
-This will tell you what `pwd` does, command line options, etc. Here you will see the information on `pwd` displayed in a text viewer called `less`.  `man` pages are always opened with `less`, a command for text viewring you will use regularly. You can move forward one page at a time with the space bar, and exit `less` by typing q.
+This will tell you what `pwd` does, command line options, etc. Here you will see the information on `pwd` displayed in a text viewer called `less`.  `man` pages are always opened with `less`, a command for text viewing you will use regularly. You can move forward one page at a time with the space bar, and exit `less` by typing `q`.
 
 Next, look at:
 
@@ -55,15 +55,15 @@ You can also move a file from your directory to any directory by displaying the 
 
 The following command would move a file into the directory Macintosh HD, which all Macs have:
 
-    $ mv filename /Volumes/Macintosh\ HD
+    $ mv <filename> /Volumes/Macintosh\ HD
 
 Note: there is a `\ ` before HD. This is because the directory name (“Machintosh HD”) has a space in it.
 
-In general, when making and naming directories or files in unix, you will want to avoid using spaces because they require extra typing and the `\ ` needs to be used instead of just “ “. If you have been using spaces in file or directory names, you will quickly learn that it causes headaches.
+In general, when making and naming directories or files in unix, you will want to avoid using spaces because they require extra typing and the `\ ` needs to be used instead of just “ “. If you have been using spaces in file or directory names, you will quickly learn that it causes headaches. You will learn from experience that the spaces in file or directory names also interfere with the efficacy of using "tab complete".
 
 What do you think the following command will do? Try it and find out:
 
-    $ mv ../filename .
+    $ mv ../<filename> .
 
 “.” Represents the current directory. Anytime you `cp` or `mv` something from some distant directory (or another computer for example) to the directory you are working in, you will use “.”  as the destination directory.
 

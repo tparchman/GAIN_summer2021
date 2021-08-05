@@ -7,7 +7,7 @@
 - Introductory tutorials, and some basic text processing with Unix tools
 
 ## Overview
-We will start by getting set up for the week. First, we will make sure everyone has Unix or Linux running on their computers. Second, we will choose a text editor to use for this course and for writing and editing code in general.
+We will start by getting set up for the week. First, we will make sure everyone has Unix or Linux running on their computers. Second, we will choose a text editor for writing and editing code in general.
 
 We will then get started on learning basic Unix commands which you are likely to use frequently. We will gain deeper familiarity with directory structure, how to navigate through this structure, view contents of directories and files, and learn to make, copy, or delete files and directories.
 
@@ -19,9 +19,6 @@ Text that is meant to serve as an example for what to type into a terminal windo
 
 Unix or Python commands, functions, or variables will also be designated in similar font when written. For example, `man`, `pwd` and `wc` are among the first Unix commands we will learn.
 
-For the first section of the course, we will have weekly Unix worksheets or assignments where we ask that you track your code and/or solutions to problems posed. In order to mark each spot in an assignment where you have to come up with your own code, we will leave a blank command line prompt as below.
-
-    $ 
 
 ## 2. Where can you run Unix?
 
@@ -32,7 +29,7 @@ If you use a windows computer, a bit of adjustment will be necessary, but you ha
 ## 3. Big data: text processing and manipulation
 Most big data is stored as text, or compressed text files. Text is special  binary format of storing data whose numbers correspond to human readable digits, letters or characters. This is the most transparent and transportable way to store data, and is hence the medium of big data. 
 
-In addition, computer code is written in text. In this course we will write Bash and Python scripts, which will simply be written and stored in text files interpretted by the appropriate mechanism and executed through your terminal.
+In addition, computer code is written in text. In this course we will write Python scripts which will simply be written and stored in text files interpretted by the appropriate mechanism and executed through your terminal.
 
 ## 4. Text editors for writing and storing code
 
@@ -40,11 +37,11 @@ Programs are typically just text files; they contain text written commands for 	
 
 Text editors for working with data or programming fill several necessities for data science.
 
-- They are empowered with tools for the searching and manipulation of data. For example, any worthy text editor is equipped with mechanisms for searching/replacing data based on flexible pattern matching. The representation of such patterns, otherwise known as **regular expressions** is a major feature of TextWrangler and other editors, and is also a major component of programming in Python or other scripting languages.
+- They are empowered with tools for the searching and manipulation of data. For example, any worthy text editor is equipped with mechanisms for searching/replacing data based on flexible pattern matching. The representation of such patterns, otherwise known as **regular expressions** is a major feature of bbEDIT and other editors, and is also a major component of programming in Python or other scripting languages.
 
-- Text editors  have syntax recognition which colors text with different functions and purposes accordingly. This is invaluable for troubleshooting code. Common text editors include `TextWrangler`, `Visual Studio Code`, `Sublime`, `Emacs`, `VIM`. I suggest `TextWrangler` for this course because your book utilizes this editor, and because it employes keyboard shortcuts as you are likely accustomed (Emacs and VI are very popular, but youd have to learn new keyboard shortcuts). You should install and be comfortable with one before the next class.
+- Text editors  have syntax recognition which colors text with different functions and purposes accordingly. This is invaluable for troubleshooting code. Common text editors include `bbEDIT`, `Visual Studio Code`, `Sublime`, `Emacs`, `VIM`. I suggest `bbEDIT` for this course because your book utilizes this editor, and because it employes keyboard shortcuts as you are likely accustomed to. 
 
-- Line endings are encoded differently for different files from different operating systems, and this can represent a stumbling block during the first weeks of learning to manipulate data with Unix and Python. Read pages 13-14 of Haddock and Dunn carefully to understand this issue, and for a quick fix in TextWrangler. We will always want to be working with Unix line endings
+- Line endings are encoded differently for different files from different operating systems, and this can represent a stumbling block during the first weeks of learning to manipulate data with Unix and Python. Read pages 13-14 of Haddock and Dunn carefully to understand this issue, and for a quick fix in TextWrangler. We will always want to be working with Unix line endings. I have also uploaded a simple bash script under `day_one` which can be used to convert files from Mac to Unix line endings (mac2unix.sh).
 
 Example syntax highlighting (note this is Perl, not Python or unix)
 

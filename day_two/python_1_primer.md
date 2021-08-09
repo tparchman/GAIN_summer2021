@@ -55,6 +55,8 @@ Then install python3
 
     $ brew install python3
 
+**For more depth on homebrew and using the `brew` command to install and update packages in your Unix system, see section 7 of  [unixII_primer.md](https://github.com/tparchman/GAIN_summer2021/tree/main/day_one/unixII_primer.md).
+
 
 ### Python downloads, also useful potentially 
 Go to python.org and download the latest release
@@ -93,7 +95,7 @@ And run as follows:
 
 ## Your first simple program, using a `print` statement.
 
-Sending information from your python scripts to stdout is accomplished with the `print` statement. Our first script will simply illustrate how we print specified text, and will serve to convince you that this might not be as hard as you thought it was. Use `touch` to make a blank text file, but give it a `.py` extension as is customary for python scripts. This script needs only two simple parts. First, your customary first line that should go in all of your scripts, which should be:
+Sending information from your python scripts to stdout is accomplished with the `print` statement. Our first script will simply illustrate how we print specified text, and will serve to convince you that writing python code might not be that hard. Use `touch` to make a blank text file, but give it a `.py` extension as is customary for python scripts. This script needs only two simple parts. First, your customary first line that should go in all of your scripts, which should be:
 
     #!/usr/bin/env python3
 Or the path to the specific location where python lives:
@@ -108,7 +110,7 @@ Note the line above will not be part of the interpreted code. Instead, you can m
 
 Now lets add a print statement:
 
-    print ("Im ready to learn python, and this is my first step")
+    print("Im ready to learn python, and this is my first step")
 
 You can now run your program in two ways. Simply (which we strongly recommend for this class):
 
@@ -141,7 +143,7 @@ Chapter 8 of Haddock and Dunn does a nice job of walking you through a script th
 <p>&nbsp;</p>
 
 ## 3A. Strings 
-Strings can be specified and assigned easily within scripts as below. Note that " or ' can be used to enclose strings, and strings not enclosed will return undefined.
+Strings can be specified and assigned easily within scripts as below. Note that `"` or `'` can be used to enclose strings, and strings not enclosed will return undefined.
 
     Team = "lakers"
     Seq_one = "actgaaa"
@@ -171,7 +173,7 @@ Strings can be repeated with `*`:
 
     Seq_one_lower = Seq_one_big.lower()
 
-`str.replace()` will replace a specified character with a different specified character:
+`str.replace()` will replace a specified character with a different specified character. The code below will replace "a" with "g":
 
     NewSeq_one = Seq_one.replace("a","g")
     print ("Use of str.replace: ", NewSeq_one)
@@ -184,7 +186,7 @@ Strings can be repeated with `*`:
  `str.isalnum()` will return *True* if all characters are alphanumeric, *False* if not.
 
     Seq_one_alphanum_test = Seq_one.isalnum()
-    print ("Use of str.alnum: ", Seq_one_alphanum_test)
+    print ("Use of str.isalnum: ", Seq_one_alphanum_test)
 
 <p>&nbsp;</p>
 
@@ -229,7 +231,7 @@ Most basic mathematical operations work in an unsurprsing manner.
     Mod = Num2 % Num1
     print (Sum, Prod, Dif, Div, Mod)
 
-If you use the code above in a script, or more efficiently, test it out with the interactive prompt (see below), the print statement should illustrate teh expected behavior of the math statements above. **Note that "Div" (5/7) returns a float with many digits past the decimal (0.7142857142857143). This is an overkill level of precision for some uses, and you will often want to control float precision for tidiness.** We will cover that type of control below.
+If you use the code above in a script, or more efficiently, test it out with the interactive prompt (see below), the print statement should illustrate the expected behavior of the math statements above. **Note that "Div" (5/7) returns a float with many digits past the decimal (0.7142857142857143). This is an overkill level of precision for some uses, and you will often want to control float precision for tidiness.** We will cover that type of control below.
 
 <p>&nbsp;</p>
 

@@ -37,7 +37,7 @@ Before working through the below exercises, make sure to have read chapter 8, an
 ### p**2 + 2pq + q**2 = 1
 <p>&nbsp;</p>
 
-### Each of the 3 terms above represent the genotype frequencies (AA [p**2], Aa [2pq], aa [q**2)]). In other words, p**2 is the predicted frequency of the first homozygous genotype, 2pq is the predicted frequency of heterozygotes, and q**2 is the predicted frequency of the second homozygous genotype. Your script should require the entry of values p and q, and should print the calculated values of each expected genotype.
+### Each of the 3 terms above represent the genotype frequencies (**AA [p2], Aa [2pq], aa [q2)]**). In other words, p2 is the predicted frequency of the first homozygous genotype, 2pq is the predicted frequency of heterozygotes, and q2 is the predicted frequency of the second homozygous genotype. Your script should require the entry of values p and q, and should print the calculated values of each expected genotype.
 <p>&nbsp;</p>
 
 ### A couple of points here:

@@ -250,7 +250,7 @@ If you arent sure whether a variable is an integer, string, or float, you can ea
 If you want to change among variables, you have some options with the `float`, `int`, and `str` functions.
 
     Var = 1.2
-    Svar = string(Var)      # makes Svar="1.2", a string
+    Svar = str(Var)      # makes Svar="1.2", a string
     type(Svar)
     Nvar = float(Svar)      # makes Nvar=1.2, a float
 

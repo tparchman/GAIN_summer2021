@@ -88,7 +88,7 @@ Another value can be added to specify interval between integers.
 Joining two lists together is very simple, just use `+`
 
     List1 = ["a", "b" , "c"]
-    List1 = [1, 2, 3]
+    List2 = [1, 2, 3]
 
     List3 = List1 + List2
     print(list3)

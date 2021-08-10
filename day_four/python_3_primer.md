@@ -240,7 +240,9 @@ We are accustomed to splitting strings based on delimiters such as ',', '\s', an
 
 ## Example demo
 
-Below is a script that performs a few simple substitutions on the yeast_genome.gff file we worked with earlier in the semester. Providing this here as an example workflow, or as a basis for playing with regular expression actions.
+Below is code that performs a few simple substitutions on the yeast_genome.gff file which you can find in the day_one/ directory. Providing this here as an example workflow, or as a basis for playing with regular expression actions.
+
+The regular expression replace function in the `for` loop below changes instances of 'chr' to 'CHR', and then writes to an outfile only the lines that match CHRI or CHRV.
 
     import sys
     import re
@@ -251,7 +253,7 @@ Below is a script that performs a few simple substitutions on the yeast_genome.g
     for Line in IN:
 	    Line = Line.strip('\n')
 	    RLine = re.sub('chr','CHR', Line)
-	print(RLine)
+	    print(RLine)
 	
 	if re.search('CHRI|CHRV', RLine):
 		OUT.write(RLine + "\n")

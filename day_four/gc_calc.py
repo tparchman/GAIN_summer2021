@@ -19,10 +19,10 @@ for Line in IN:
 	elif re.search("[ATCG]", Line):
 		Ccount=Line.count('C')
 		Gcount=Line.count('G')
-		SeqLength=len(Line)
+		SeqLength=float(len(Line))
 		GC=(Gcount + Ccount)/SeqLength
 		print(TotalC, TotalG)
-		OUT.write("Sequence length: %d, GC content: %f.2 \n" %(SeqLength, GC))
+		OUT.write("Sequence length: %d, GC content: %.2f \n" %(SeqLength, GC))
 		TotalC += Ccount
 		TotalG += Gcount
 		CumLength += SeqLength
@@ -33,4 +33,4 @@ TotalGC = (TotalC + TotalG)/CumLength
 
 
 
-#print("Number of sequences: %d, Total GC fraction: %f.2" % (TotalGC,LineNumber)) 
+#print("Number of sequences: %d, Total GC fraction: %f" % (TotalGC,LineNumber)) 
